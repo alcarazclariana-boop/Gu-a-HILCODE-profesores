@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Actividades HILCODE - Erasmus+ 2026</title>
+    <title>Guía Docente de Iniciación Tecnológica - HILCODE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
@@ -12,12 +15,24 @@
                 extend: {
                     colors: {
                         brand: {
-                            50: '#fef2f2',
-                            100: '#fee2e2',
-                            500: '#ef4444',
-                            600: '#dc2626',
-                            900: '#7f1d1d',
+                            50: '#f0f9ff',  
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            400: '#38bdf8',
+                            500: '#0ea5e9', 
+                            600: '#0284c7', 
+                            900: '#0c4a6e', 
+                        },
+                        accent: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#fb923c', 
+                            600: '#ea580c', 
+                            900: '#7c2d12',
                         }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
                     }
                 }
             }
@@ -27,449 +42,580 @@
        .glass-card {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.08); 
         }
         body {
-            background-color: #f3f4f6;
-            background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-            background-size: 20px 20px;
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+       .hero-gradient {
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+        }
+       .section-separator {
+            height: 4px;
+            border-radius: 9999px;
+            background: linear-gradient(90deg, #bae6fd 0%, transparent 100%);
         }
     </style>
 </head>
-<body class="text-gray-800 antialiased font-sans">
+<body class="text-slate-700 antialiased">
 
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0 flex items-center gap-3">
-                    <img src="logo%20horizontal1.png" alt="HILCODE Logo" class="h-8 w-auto object-contain">
+                <div class="flex items-center gap-2">
+                    <img src="logo%20horizontal1.png" alt="How I Learned Code" class="h-10 w-auto object-contain">
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#introduccion" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Introducción</a>
-                    <a href="#scratch" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Herramientas</a>
+                <div class="hidden md:flex space-x-6 overflow-x-auto">
+                    <a href="#introduccion" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors">Inicio</a>
+                    <a href="#scratch" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors">Scratch</a>
+                    <a href="#minecraft" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors">Minecraft</a>
+                    <a href="#tinkercad" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors">Diseño 3D</a>
+                    <a href="#makecode" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors">Arcade</a>
+                    <a href="#roblox" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors">Roblox</a>
+                    <a href="#robotica" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors">Robótica</a>
+                    <a href="#placas" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors">Placas</a>
+                    <a href="#beebot" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors">Bee-Bot</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="relative pt-24 pb-12 sm:pt-32 sm:pb-16 lg:pb-24 overflow-hidden">
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 mb-6">
-                Guía de Actividades <span class="text-brand-600">Erasmus+ 2026</span>
+    <header class="relative pt-32 pb-20 hero-gradient text-white overflow-hidden shadow-md">
+        <div class="absolute inset-0 opacity-20 mix-blend-overlay" style="background-image: url('IMG_20231003_200707.jpg'); background-size: cover; background-position: center;">
+        </div>
+        <div class="relative max-w-5xl mx-auto px-4 text-center">
+            <span class="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-md rounded-full text-xs font-bold mb-6 tracking-widest uppercase text-brand-50 border border-white/30">Educación y Tecnología</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight text-white drop-shadow-sm tracking-tight">
+                Guía de iniciación <br/><span class="text-brand-100">para profesores</span>
             </h1>
-            <p class="mt-4 max-w-3xl mx-auto text-xl text-gray-600">
-                Recursos, herramientas y actividades de nuestras clases: HOW I LEARNED CODE.
+            <p class="text-lg md:text-xl text-brand-50 max-w-2xl mx-auto leading-relaxed opacity-95 font-medium">
+                Recopilación de herramientas, temarios y actividades para integrar la tecnología en el aula.
             </p>
         </div>
-    </div>
+    </header>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row gap-8">
+    <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col lg:flex-row gap-12">
         
-        <aside class="w-full md:w-1/4 shrink-0">
-            <div class="sticky top-24 glass-card rounded-2xl p-6">
-                <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    <i data-lucide="list" class="w-5 h-5 text-brand-600"></i> Índice
-                </h3>
-                <ul class="space-y-3">
-                    <li><a href="#introduccion" class="text-gray-600 hover:text-brand-600 hover:translate-x-1 inline-block transition-transform">Introducción</a></li>
-                    <li><a href="#scratch" class="text-gray-600 hover:text-brand-600 hover:translate-x-1 inline-block transition-transform">1. Scratch</a></li>
-                    <li><a href="#minecraft" class="text-gray-600 hover:text-brand-600 hover:translate-x-1 inline-block transition-transform">2. Minecraft</a></li>
-                    <li><a href="#tinkercad" class="text-gray-600 hover:text-brand-600 hover:translate-x-1 inline-block transition-transform">3. Tinkercad</a></li>
-                    <li><a href="#makecode" class="text-gray-600 hover:text-brand-600 hover:translate-x-1 inline-block transition-transform">4. MakeCode Arcade</a></li>
-                    <li><a href="#roblox" class="text-gray-600 hover:text-brand-600 hover:translate-x-1 inline-block transition-transform">5. Roblox</a></li>
-                    <li><a href="#microbit" class="text-gray-600 hover:text-brand-600 hover:translate-x-1 inline-block transition-transform">6. Micro:bit</a></li>
-                    <li><a href="#makeymakey" class="text-gray-600 hover:text-brand-600 hover:translate-x-1 inline-block transition-transform">7. Makey Makey</a></li>
-                    <li><a href="#beebot" class="text-gray-600 hover:text-brand-600 hover:translate-x-1 inline-block transition-transform">8. Bee-Bot</a></li>
-                </ul>
+        <aside class="w-full lg:w-64 shrink-0 hidden lg:block">
+            <div class="sticky top-24 space-y-2 bg-white/80 backdrop-blur-sm p-4 rounded-3xl border border-slate-200 shadow-sm">
+                <p class="text-xs font-bold text-brand-600 uppercase tracking-widest px-4 mb-4">Secciones</p>
+                <a href="#introduccion" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-brand-50 transition-colors text-slate-700 hover:text-brand-700 font-semibold">
+                    <i data-lucide="info" class="w-5 h-5 opacity-70"></i> <span class="text-sm">Introducción</span>
+                </a>
+                <a href="#scratch" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-orange-50 transition-colors text-slate-700 hover:text-orange-600 font-semibold">
+                    <i data-lucide="code-2" class="w-5 h-5 opacity-70"></i> <span class="text-sm">1. Scratch</span>
+                </a>
+                <a href="#minecraft" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-emerald-50 transition-colors text-slate-700 hover:text-emerald-700 font-semibold">
+                    <i data-lucide="box" class="w-5 h-5 opacity-70"></i> <span class="text-sm">2. Minecraft</span>
+                </a>
+                <a href="#tinkercad" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-blue-50 transition-colors text-slate-700 hover:text-blue-700 font-semibold">
+                    <i data-lucide="cuboid" class="w-5 h-5 opacity-70"></i> <span class="text-sm">3. Tinkercad</span>
+                </a>
+                <a href="#makecode" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-purple-50 transition-colors text-slate-700 hover:text-purple-700 font-semibold">
+                    <i data-lucide="gamepad-2" class="w-5 h-5 opacity-70"></i> <span class="text-sm">4. MakeCode</span>
+                </a>
+                <a href="#roblox" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-200 transition-colors text-slate-700 hover:text-slate-900 font-semibold">
+                    <i data-lucide="layout-grid" class="w-5 h-5 opacity-70"></i> <span class="text-sm">5. Roblox</span>
+                </a>
+                <a href="#robotica" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-rose-50 transition-colors text-slate-700 hover:text-rose-600 font-semibold">
+                    <i data-lucide="bot" class="w-5 h-5 opacity-70"></i> <span class="text-sm">6. Robótica</span>
+                </a>
+                <a href="#placas" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-cyan-50 transition-colors text-slate-700 hover:text-cyan-700 font-semibold">
+                    <i data-lucide="cpu" class="w-5 h-5 opacity-70"></i> <span class="text-sm">7. Micro:bit & Makey</span>
+                </a>
+                <a href="#beebot" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-yellow-50 transition-colors text-slate-700 hover:text-yellow-700 font-semibold">
+                    <i data-lucide="bug" class="w-5 h-5 opacity-70"></i> <span class="text-sm">8. Bee-Bot</span>
+                </a>
             </div>
         </aside>
 
-        <main class="w-full md:w-3/4 space-y-16" id="herramientas">
+        <main class="flex-1 space-y-12">
 
-            <section id="introduccion" class="glass-card rounded-3xl p-8 lg:p-10">
-                <div class="flex items-center gap-4 mb-6">
-                    <div class="p-3 bg-brand-100 rounded-xl">
-                        <i data-lucide="book-open" class="w-8 h-8 text-brand-600"></i>
-                    </div>
-                    <h2 class="text-3xl font-bold text-gray-900">Introducción</h2>
-                </div>
-                
-                <img src="IMG_20231003_200707.jpg" alt="Instalaciones HILCODE" class="w-full h-64 object-cover rounded-xl mb-6 shadow-sm">
-                
-                <div class="prose max-w-none text-gray-600 text-lg leading-relaxed space-y-4">
-                    <p>Esta guía nace como continuación de la experiencia compartida durante la visita del profesorado participante en el programa Erasmus+ a nuestra academia.</p>
-                    <p>Durante estos días, hemos tenido la oportunidad de intercambiar metodologías, explorar herramientas digitales y, sobre todo, reflexionar sobre cómo integrar la tecnología en el aula de una forma significativa, creativa y adaptada a las nuevas necesidades educativas.</p>
-                    <p>El objetivo de este documento es ofrecer una recopilación de los recursos, plataformas y actividades que hemos trabajado juntos, para que podáis seguir explorándolos, adaptarlos a vuestro contexto educativo y aplicarlos tanto en el aula como en proyectos propios.</p>
-                    <p>A lo largo de la guía encontraréis herramientas orientadas a diferentes edades y niveles, desde la iniciación al pensamiento computacional en infantil, hasta la creación de videojuegos, diseño 3D, robótica o introducción a la inteligencia artificial.</p>
-                    
-                    <div class="bg-gray-50 border-l-4 border-brand-500 p-6 rounded-r-xl my-6">
-                        <h4 class="font-bold text-gray-900 mb-2">Todas ellas comparten un enfoque común:</h4>
-                        <ul class="list-disc pl-5 space-y-2">
-                            <li>Aprender haciendo (learning by doing)</li>
-                            <li>Fomentar la creatividad y la experimentación</li>
-                            <li>Desarrollar el pensamiento crítico y computacional</li>
-                            <li>Convertir al alumnado en creador, no solo en consumidor de tecnología</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section id="scratch" class="scroll-mt-24">
-                <div class="flex items-center gap-4 mb-8 border-b pb-4">
-                    <span class="text-5xl font-black text-brand-200">1</span>
-                    <h2 class="text-3xl font-bold text-gray-900">SCRATCH – Programación creativa y pensamiento crítico</h2>
-                </div>
-                <p class="text-lg text-gray-600 mb-6">Scratch es una plataforma de programación visual diseñada especialmente para niños y niñas. A través de bloques de colores que encajan como piezas de un puzle, pueden crear animaciones, historias interactivas, juegos y mucho más, sin necesidad de saber código tradicional.</p>
-                <img src="IMG_20231118_173210.jpg" alt="Alumnos programando en Scratch" class="w-full h-64 object-cover rounded-xl mb-8 shadow-sm">
-                
-                <h3 class="text-xl font-bold text-gray-800 mb-4">1.2 Proyectos para trabajar nuestros contenidos</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
-                    <div class="glass-card p-4 rounded-xl border-t-4 border-brand-500">
-                        <h4 class="font-bold text-gray-900 mb-2">El gato que baila</h4>
-                        <a href="https://scratch.mit.edu/projects/68160392/" target="_blank" class="text-sm text-blue-600 hover:underline block">Original</a>
-                    </div>
-                    <div class="glass-card p-4 rounded-xl border-t-4 border-brand-500">
-                        <h4 class="font-bold text-gray-900 mb-2">Screamer</h4>
-                        <a href="https://scratch.mit.edu/projects/113298157/" target="_blank" class="text-sm text-blue-600 hover:underline block">Original</a>
-                        <a href="https://scratch.mit.edu/projects/396547406/" target="_blank" class="text-sm text-blue-600 hover:underline block">Plantilla</a>
-                        <a href="https://scratch.mit.edu/projects/354500623/" target="_blank" class="text-sm text-blue-600 hover:underline block">Animación navideña</a>
-                    </div>
-                    <div class="glass-card p-4 rounded-xl border-t-4 border-brand-500">
-                        <h4 class="font-bold text-gray-900 mb-2">Clicker</h4>
-                        <a href="https://scratch.mit.edu/projects/277788097/" target="_blank" class="text-sm text-blue-600 hover:underline block">Original</a>
-                        <a href="https://scratch.mit.edu/projects/422346897/" target="_blank" class="text-sm text-blue-600 hover:underline block">Plantilla</a>
-                    </div>
-                    <div class="glass-card p-4 rounded-xl border-t-4 border-brand-500">
-                        <h4 class="font-bold text-gray-900 mb-2">Piano para Makey Makey</h4>
-                        <a href="https://scratch.mit.edu/projects/805092880/" target="_blank" class="text-sm text-blue-600 hover:underline block">Original</a>
-                        <a href="https://scratch.mit.edu/projects/806955251/" target="_blank" class="text-sm text-blue-600 hover:underline block">Plantilla</a>
-                    </div>
-                    <div class="glass-card p-4 rounded-xl border-t-4 border-brand-500">
-                        <h4 class="font-bold text-gray-900 mb-2">Estudio de pintura</h4>
-                        <a href="https://scratch.mit.edu/projects/185587377/" target="_blank" class="text-sm text-blue-600 hover:underline block">Original</a>
-                        <a href="https://scratch.mit.edu/projects/808584473/" target="_blank" class="text-sm text-blue-600 hover:underline block">Plantilla</a>
-                    </div>
-                    <div class="glass-card p-4 rounded-xl border-t-4 border-brand-500">
-                        <h4 class="font-bold text-gray-900 mb-2">Laberinto</h4>
-                        <a href="https://scratch.mit.edu/projects/130747460/" target="_blank" class="text-sm text-blue-600 hover:underline block">Original</a>
-                        <a href="https://scratch.mit.edu/projects/141793571/" target="_blank" class="text-sm text-blue-600 hover:underline block">Plantilla</a>
-                    </div>
-                    <div class="glass-card p-4 rounded-xl border-t-4 border-brand-500">
-                        <h4 class="font-bold text-gray-900 mb-2">Come Donuts (RA)</h4>
-                        <a href="https://scratch.mit.edu/projects/92692609/" target="_blank" class="text-sm text-blue-600 hover:underline block">Original</a>
-                        <a href="https://scratch.mit.edu/projects/409825197/" target="_blank" class="text-sm text-blue-600 hover:underline block">Plantilla</a>
-                    </div>
-                    <div class="glass-card p-4 rounded-xl border-t-4 border-brand-500">
-                        <h4 class="font-bold text-gray-900 mb-2">El ataque de los clones</h4>
-                        <a href="https://scratch.mit.edu/projects/121766821/" target="_blank" class="text-sm text-blue-600 hover:underline block">Original</a>
-                        <a href="https://scratch.mit.edu/projects/410054250/" target="_blank" class="text-sm text-blue-600 hover:underline block">Plantilla</a>
-                    </div>
-                    <div class="glass-card p-4 rounded-xl border-t-4 border-brand-500">
-                        <h4 class="font-bold text-gray-900 mb-2">Dance Dance Revolution</h4>
-                        <a href="https://scratch.mit.edu/projects/553146452/" target="_blank" class="text-sm text-blue-600 hover:underline block">Original</a>
-                        <a href="https://scratch.mit.edu/projects/808583678/" target="_blank" class="text-sm text-blue-600 hover:underline block">Plantilla</a>
-                    </div>
-                    <div class="glass-card p-4 rounded-xl border-t-4 border-brand-500">
-                        <h4 class="font-bold text-gray-900 mb-2">Futbolin</h4>
-                        <a href="https://scratch.mit.edu/projects/808615591/" target="_blank" class="text-sm text-blue-600 hover:underline block">Original</a>
-                        <a href="https://scratch.mit.edu/projects/808625489/" target="_blank" class="text-sm text-blue-600 hover:underline block">Plantilla</a>
-                    </div>
-                    <div class="glass-card p-4 rounded-xl border-t-4 border-brand-500">
-                        <h4 class="font-bold text-gray-900 mb-2">Run & jump star wars</h4>
-                        <a href="https://scratch.mit.edu/projects/220646635/" target="_blank" class="text-sm text-blue-600 hover:underline block">Original</a>
-                        <a href="https://scratch.mit.edu/projects/220657954/" target="_blank" class="text-sm text-blue-600 hover:underline block">Plantilla</a>
-                    </div>
-                    <div class="glass-card p-4 rounded-xl border-t-4 border-brand-500">
-                        <h4 class="font-bold text-gray-900 mb-2">Mini Retos Debug-it</h4>
-                        <span class="text-sm text-gray-500 block">Explicados en la guía teórica</span>
-                    </div>
+            <section id="introduccion" class="bg-white rounded-[2rem] shadow-sm border border-slate-200 p-8 md:p-12 mb-12">
+                <h2 class="text-3xl font-black text-slate-800 mb-6 flex items-center gap-3 tracking-tight">
+                    <div class="p-2.5 bg-brand-50 text-brand-600 rounded-xl"><i data-lucide="book-open" class="w-6 h-6"></i></div> 
+                    Introducción
+                </h2>
+                <div class="prose max-w-none text-slate-600 leading-relaxed text-lg space-y-6">
+                    <p>Esta guía nace como fruto de nuestra experiencia formando a profesorado y docentes de distintos centros educativos. Ofrecemos una recopilación de recursos, plataformas y actividades para fomentar el pensamiento crítico y computacional, diseñadas para que podáis integrarlas fácilmente en vuestro contexto educativo.</p>
                 </div>
 
-                <h3 class="text-xl font-bold text-gray-800 mb-4">1.3 Recursos</h3>
-                <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200 mb-10">
-                    <ul class="space-y-4">
-                        <li>
-                            <p class="font-bold text-gray-900">Introducción a la programación con Scratch en 12 sesiones (Documento guía)</p>
-                            <a href="https://docs.google.com/document/d/1gqgKs9cNaiBO9UvAlB-_C9Z6nqmM7HRYx2wBmID4xuM/edit?usp=sharing" target="_blank" class="text-blue-600 hover:underline text-sm">Enlace: Recursos de Scratch para profes</a>
-                        </li>
-                        <li>
-                            <p class="font-bold text-gray-900">Scratch para docentes (Documento guía)</p>
-                            <a href="https://drive.google.com/file/d/0B-FbN3tM8wPOQVVuekxDb2RNOXFLV0lJak93R3FGem10X1F3/view?usp=sharing&resourcekey=0-j9YMJ0KqKaeCJ2dmGQzfJA" target="_blank" class="text-blue-600 hover:underline text-sm">Enlace: Guia docentes taller Scratch 3.0.pdf</a>
-                        </li>
-                        <li>
-                            <p class="font-bold text-gray-900">Documento resumen de actividades Vedruna</p>
-                            <a href="https://drive.google.com/file/d/1Lo_DIHpSQiAG0PgaBEnZ7juibm8Zv3_w/view?usp=sharing" target="_blank" class="text-blue-600 hover:underline text-sm">Enlace: Memoria de actividades AACC - Vedruna.pdf</a>
-                        </li>
-                        <li>
-                            <p class="font-bold text-gray-900">Tarjetas de actividades de Scratch</p>
-                            <a href="https://creativecomputing.gse.harvard.edu/guide/files/translations/Spanish.pdf" target="_blank" class="text-blue-600 hover:underline text-sm">👉 Descargar PDF</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <h3 class="text-xl font-bold text-gray-800 mb-4">Recursos recomendados para trabajar la IA a través de la programación por bloques</h3>
-                <div class="glass-card rounded-2xl p-6 border-t-4 border-brand-500">
-                    <ul class="space-y-4 text-sm text-gray-700">
-                        <li>
-                            <p class="font-bold text-gray-900">1. Explorando la IA con bloques de detección facial de Scratch</p>
-                            <a href="https://scratch.mit.edu/projects/1208621527/editor?tutorial=face-sensing" target="_blank" class="text-blue-600 hover:underline">👉 Tutorial</a>
-                        </li>
-                        <li>
-                            <p class="font-bold text-gray-900">2. Mezcla y Muévete con IA</p>
-                            <a href="https://studio.code.org/courses/mix-move-ai-2025/units/1/lessons/1/levels/1" target="_blank" class="text-blue-600 hover:underline">👉 Tutorial</a>
-                        </li>
-                        <li>
-                            <p class="font-bold text-gray-900">3. Fiesta de baile: Edición IA</p>
-                            <a href="https://studio.code.org/courses/dance-ai-2023/units/1/lessons/1/levels/1" target="_blank" class="text-blue-600 hover:underline">👉 Tutorial</a>
-                        </li>
-                        <li>
-                            <p class="font-bold text-gray-900">4. Laboratorio de música: Jam Session</p>
-                            <a href="https://studio.code.org/projects/music/5KkX91iUHjsO9CmVlDZ4b-3XsQLG_RQXHB1q1a2U-gg/edit" target="_blank" class="text-blue-600 hover:underline">👉 Herramienta</a>
-                        </li>
-                        <li>
-                            <p class="font-bold text-gray-900">5. La IA es divertidísima</p>
-                            <a href="https://app.codemonkey.com/courses/ai-mini-course#1" target="_blank" class="text-blue-600 hover:underline">👉 Tutorial</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="minecraft" class="scroll-mt-24">
-                <div class="flex items-center gap-4 mb-8 border-b pb-4">
-                    <span class="text-5xl font-black text-emerald-200">2</span>
-                    <h2 class="text-3xl font-bold text-gray-900">MINECRAFT</h2>
-                </div>
-                <p class="text-lg text-gray-600 mb-6">Minecraft es mucho más que un juego: es un entorno donde pueden experimentar con lógica, diseño y pensamiento computacional. En clase utilizamos Minecraft Education Edition para trabajar conceptos de electrónica digital y electricidad de forma visual y divertida.</p>
-                <img src="20230629_101052.jpg" alt="Alumnos jugando Minecraft" class="w-full h-64 object-cover rounded-xl mb-8 shadow-sm">
-                
-                <div class="glass-card rounded-3xl p-8 border-t-4 border-emerald-500 mb-8">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">CONTENIDOS GENERALES PARA 12 SESIONES</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-gray-700 mb-8">
+                <div class="mt-10 bg-slate-800 rounded-3xl p-8 md:p-10 text-white shadow-inner">
+                    <h3 class="text-2xl font-black mb-6 flex items-center gap-3 tracking-tight text-white">
+                        <i data-lucide="users" class="w-6 h-6 text-accent-400"></i> Herramientas Metodológicas
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
-                            <p class="font-bold text-emerald-700 text-lg mb-2">1. Fundamentos del Redstone y la electrónica real</p>
-                            <ul class="list-disc pl-5 mb-6 space-y-1">
-                                <li>Diferencia entre electricidad y electrónica</li>
-                                <li>Señales: Digitales y analógicas</li>
-                                <li>Componentes de un circuito: Entradas y salidas</li>
-                                <li>Estados de las señales digitales (1/0 – On/Off)</li>
-                                <li>Procesos automáticos</li>
-                                <li>Conductores y aislantes</li>
-                                <li>Potencia</li>
-                                <li>Redstone: Actualización y Tics de Redstone</li>
-                                <li>Señales Vs pulsos</li>
+                            <h4 class="font-bold text-xl mb-3 text-brand-200">Pair Programming</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-4">Programación por parejas. Dos alumnos por ordenador utilizando juego de roles:</p>
+                            <ul class="space-y-3 text-sm text-slate-300">
+                                <li class="flex items-start gap-2"><i data-lucide="keyboard" class="w-4 h-4 text-accent-400 mt-0.5 shrink-0"></i> <span><strong class="text-white">Conductor:</strong> El único que puede tocar teclado y ratón. Debe actuar en consenso.</span></li>
+                                <li class="flex items-start gap-2"><i data-lucide="eye" class="w-4 h-4 text-accent-400 mt-0.5 shrink-0"></i> <span><strong class="text-white">Copiloto:</strong> Se encarga de pensar la mejor manera de resolver retos y depurar errores.</span></li>
                             </ul>
-                            
-                            <p class="font-bold text-emerald-700 text-lg mb-2">2. Uso de las puertas lógicas</p>
-                            <ul class="list-disc pl-5 mb-6 space-y-1">
-                                <li>Conceptos</li>
-                                <li>Tabla de verdad</li>
-                                <li>Puertas lógicas: NOT, OR, AND, XOR</li>
-                                <li>Puertas negadas: NOR, NAND y XNOR</li>
-                                <li>Circuitos lógicos: Función lógica, Operaciones lógicas básicas, Simplificación de una función</li>
-                            </ul>
-                            
-                            <p class="font-bold text-emerald-700 text-lg mb-2">3. Código binario</p>
-                            <ul class="list-disc pl-5 mb-6 space-y-1">
-                                <li>Conceptos básicos: El código y su peso</li>
-                                <li>Codificador y Decodificador</li>
-                                <li>Calculo: operaciones binarias</li>
-                                <li>Código ASCII</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="font-bold text-emerald-700 text-lg mb-2">4. La memoria de las máquinas</p>
-                            <ul class="list-disc pl-5 mb-6 space-y-1">
-                                <li>Flip-Flops: T, D, RS, JK</li>
-                                <li>Célula de memoria</li>
-                                <li>Temporizadores: Concepto de frecuencia, Tipos de temporizadores en minecraft</li>
-                                <li>Contador, Array de memoria, Reloj</li>
-                            </ul>
-                            
-                            <p class="font-bold text-emerald-700 text-lg mb-2">5. Introducción a la domótica</p>
-                            <ul class="list-disc pl-5 mb-6 space-y-1">
-                                <li>Conceptos básicos</li>
-                                <li>Tipos principales de dispositivos domóticos: Confort, Seguridad, Eficiencia energética</li>
-                                <li>Temporizadores y Sensores</li>
-                            </ul>
-                            
-                            <div class="mt-8 bg-emerald-50 p-4 rounded-xl border border-emerald-100">
-                                <p class="font-bold text-gray-900 mb-2">Electrónica digital con Minecraft en 12 sesiones (Documento guía)</p>
-                                <a href="https://docs.google.com/document/d/1b5b19PnwUFSEG0OU_ncm-V7Ig4PLwcF0toDhpejOLws/edit?usp=sharing" target="_blank" class="text-blue-600 hover:underline font-semibold">Enlace: Abrir Documento</a>
+                            <div class="bg-slate-700/50 border border-slate-600 p-4 rounded-xl mt-4 text-sm font-medium text-accent-300 flex items-start gap-3">
+                                <i data-lucide="lightbulb" class="w-5 h-5 shrink-0"></i>
+                                <p><strong>Regla de oro:</strong> No somos mandones. Usamos palabras respetuosas como "Creo que...", "En mi opinión...".</p>
                             </div>
                         </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-3 text-brand-200">Actividades Desconectadas</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                También llamadas actividades "Unplugged". Son juegos de lógica, cartas, uso de cuerdas y movimientos físicos diseñados para representar y comprender conceptos informáticos (como algoritmos, bucles o transmisión de datos) <strong>sin necesidad de usar pantallas ni ordenadores</strong>.
+                            </p>
+                        </div>
                     </div>
-
-                    <h4 class="font-bold text-xl text-gray-800 mb-4 border-b pb-2">Videos - Minecraft Live 2020</h4>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8">
-                        <a href="https://www.youtube.com/watch?v=2LdsyGMTA4w" target="_blank" class="px-4 py-3 bg-gray-50 border border-gray-200 hover:border-red-400 rounded-lg text-sm font-semibold text-gray-700 hover:text-red-600 transition-colors flex items-center justify-between">Sesión 1 <i data-lucide="play-circle" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/watch?v=tFL5rqwnInk" target="_blank" class="px-4 py-3 bg-gray-50 border border-gray-200 hover:border-red-400 rounded-lg text-sm font-semibold text-gray-700 hover:text-red-600 transition-colors flex items-center justify-between">Sesión 2 <i data-lucide="play-circle" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/watch?v=S3a3BijuDsw" target="_blank" class="px-4 py-3 bg-gray-50 border border-gray-200 hover:border-red-400 rounded-lg text-sm font-semibold text-gray-700 hover:text-red-600 transition-colors flex items-center justify-between">Sesión 3 <i data-lucide="play-circle" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/watch?v=g_ksNe442VA" target="_blank" class="px-4 py-3 bg-gray-50 border border-gray-200 hover:border-red-400 rounded-lg text-sm font-semibold text-gray-700 hover:text-red-600 transition-colors flex items-center justify-between">Sesión 4 <i data-lucide="play-circle" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/watch?v=lH8J8Ndnql8" target="_blank" class="px-4 py-3 bg-gray-50 border border-gray-200 hover:border-red-400 rounded-lg text-sm font-semibold text-gray-700 hover:text-red-600 transition-colors flex items-center justify-between">Sesión 5 <i data-lucide="play-circle" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/watch?v=61n7lOriE0c" target="_blank" class="px-4 py-3 bg-gray-50 border border-gray-200 hover:border-red-400 rounded-lg text-sm font-semibold text-gray-700 hover:text-red-600 transition-colors flex items-center justify-between">Sesión 6 <i data-lucide="play-circle" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/watch?v=CYjc75GfG7s" target="_blank" class="px-4 py-3 bg-gray-50 border border-gray-200 hover:border-red-400 rounded-lg text-sm font-semibold text-gray-700 hover:text-red-600 transition-colors flex items-center justify-between">Sesión 7 <i data-lucide="play-circle" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/watch?v=KODdtKWFI5Q" target="_blank" class="px-4 py-3 bg-gray-50 border border-gray-200 hover:border-red-400 rounded-lg text-sm font-semibold text-gray-700 hover:text-red-600 transition-colors flex items-center justify-between">Sesión 8 <i data-lucide="play-circle" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/watch?v=KUvuJDYysZY" target="_blank" class="px-4 py-3 bg-gray-50 border border-gray-200 hover:border-red-400 rounded-lg text-sm font-semibold text-gray-700 hover:text-red-600 transition-colors flex items-center justify-between">Sesión 9 <i data-lucide="play-circle" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/watch?v=xysa3gzmf7g" target="_blank" class="px-4 py-3 bg-gray-50 border border-gray-200 hover:border-red-400 rounded-lg text-sm font-semibold text-gray-700 hover:text-red-600 transition-colors flex items-center justify-between">Sesión 10 <i data-lucide="play-circle" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/watch?v=_SX-l7UN9zY" target="_blank" class="px-4 py-3 bg-gray-50 border border-gray-200 hover:border-red-400 rounded-lg text-sm font-semibold text-gray-700 hover:text-red-600 transition-colors flex items-center justify-between">Sesión 11 <i data-lucide="play-circle" class="w-4 h-4"></i></a>
-                        <a href="https://www.youtube.com/watch?v=ZC6jI4qbPZc" target="_blank" class="px-4 py-3 bg-gray-50 border border-gray-200 hover:border-red-400 rounded-lg text-sm font-semibold text-gray-700 hover:text-red-600 transition-colors flex items-center justify-between">Sesión 12 <i data-lucide="play-circle" class="w-4 h-4"></i></a>
-                    </div>
-
-                    <h4 class="font-bold text-xl text-gray-800 mb-4 border-b pb-2">Videos - Introducción a la electrónica digital con Play Hacks</h4>
-                    <div class="flex flex-wrap gap-3">
-                        <a href="https://drive.google.com/file/d/19ZxpZpVB_a2mzhcL0TbCJUHljpkmGry7/view?usp=drive_link" target="_blank" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded-lg text-sm font-medium text-blue-800 transition-colors">Parte 1</a>
-                        <a href="https://drive.google.com/file/d/1OdgRm46nKMPH5-dozXMZm2fzXGSYUdYY/view?usp=drive_link" target="_blank" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded-lg text-sm font-medium text-blue-800 transition-colors">Parte 2</a>
-                        <a href="https://drive.google.com/file/d/1qJzds2IFcXV3nK4CyQ9-lw2pi2F0SoaC/view?usp=drive_link" target="_blank" class="px-4 py-2 bg-blue-100 hover:bg-blue-200 rounded-lg text-sm font-medium text-blue-800 transition-colors">Parte 3</a>
-                    </div>
-                </div>
-
-                <div class="bg-blue-50 rounded-2xl p-8 border border-blue-100">
-                    <h3 class="text-xl font-bold text-blue-900 mb-4">Recursos recomendados para trabajar la IA (solo con Minecraft education)</h3>
-                    <p class="text-blue-800 mb-4 text-sm">En las actividades que os dejamos a continuación, los alumnos colaboran con asistentes de IA dentro del juego. Las actividades están planteadas como misiones y retos guiados, ideales para trabajar de forma autónoma en casa.</p>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-blue-900">
-                        <li class="bg-white p-3 rounded-lg shadow-sm border border-blue-100 font-bold">1. Hora de la IA: La primera noche</li>
-                        <li class="bg-white p-3 rounded-lg shadow-sm border border-blue-100 font-bold">2. Fantastic Fairgrounds</li>
-                        <li class="bg-white p-3 rounded-lg shadow-sm border border-blue-100 font-bold">3. Generación IA</li>
-                        <li class="bg-white p-3 rounded-lg shadow-sm border border-blue-100 font-bold">4. IA para el bien (Incendios forestales)</li>
-                        <li class="bg-white p-3 rounded-lg shadow-sm border border-blue-100 font-bold">5. Reed Smart: detective de IA</li>
-                        <li class="bg-white p-3 rounded-lg shadow-sm border border-blue-100 font-bold">6. CyberSafe AI: profundiza</li>
-                    </ul>
                 </div>
             </section>
 
-            <section id="tinkercad" class="scroll-mt-24">
-                <div class="flex items-center gap-4 mb-8 border-b pb-4">
-                    <span class="text-5xl font-black text-blue-200">3</span>
-                    <h2 class="text-3xl font-bold text-gray-900">TINKERCAD - Diseño 3D</h2>
+            <section id="scratch" class="scroll-mt-24 bg-orange-50/40 rounded-[2.5rem] p-6 md:p-10 border border-orange-100">
+                <div class="flex items-end gap-4 mb-8">
+                    <h2 class="text-4xl font-black text-slate-800 tracking-tight">01. Scratch</h2>
                 </div>
                 
-                <div class="flex flex-col md:flex-row gap-8 items-center bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-                    <div class="w-full md:w-1/2">
-                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80" alt="Diseño 3D" class="rounded-2xl shadow-md w-full h-64 object-cover">
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">Programación creativa y pensamiento crítico. A través de bloques de colores, los alumnos pueden crear animaciones, historias interactivas y juegos sin necesidad de saber código tradicional.</p>
+
+                <div class="w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-md mb-12 bg-slate-200 border-4 border-white">
+                    <img src="foto_scratch.jpg" alt="Clase de Scratch" class="w-full h-full object-cover">
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 mb-12 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-orange-500"></div>
+                    <h3 class="text-2xl font-black mb-6 text-slate-800 tracking-tight flex items-center gap-3">
+                        <div class="p-2.5 bg-orange-50 text-orange-600 rounded-xl"><i data-lucide="list-tree" class="w-6 h-6"></i></div>
+                        Temario y Proyectos
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4 text-orange-700 border-b border-orange-100 pb-2">Conceptos de Programación</h4>
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Algoritmos y depuración (Debugging)</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Tipos de datos, variables y listas</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Sensores y datos de entrada</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Control de flujo (Bucles, Condicionales)</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Operadores (Aritméticos, lógicos)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-4 text-orange-700 border-b border-orange-100 pb-2">Diseño de Videojuegos</h4>
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Animaciones, sprites y disfraces</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Sonidos y diálogos</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Movimiento, coordenadas 2D y colisiones</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Marcadores y temporizadores</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Cambios de pantalla (Menús, Game Over)</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="w-full md:w-1/2 space-y-4">
-                        <p class="text-gray-600">Tinkercad es una plataforma online gratuita que permite a niños y jóvenes iniciarse en el diseño 3D de forma sencilla y visual. Con una interfaz muy intuitiva basada en figuras geométricas, pueden crear desde objetos simples hasta modelos complejos listos para impresión 3D.</p>
-                        <a href="https://www.tinkercad.com/" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-xl transition-colors">
-                            <i data-lucide="cuboid" class="w-5 h-5"></i> Explorar tutoriales
+                    <div class="bg-orange-50/50 rounded-2xl p-6 border border-orange-100">
+                        <h4 class="font-bold text-slate-800 mb-4 text-sm uppercase tracking-wider">Plantillas de Proyectos Destacados</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="https://scratch.mit.edu/projects/68160392/" target="_blank" class="px-4 py-2 bg-white border border-slate-200 hover:border-orange-300 rounded-lg text-sm font-semibold text-orange-600 hover:bg-orange-50 transition-all shadow-sm">El gato que baila</a>
+                            <a href="https://scratch.mit.edu/projects/113298157/" target="_blank" class="px-4 py-2 bg-white border border-slate-200 hover:border-orange-300 rounded-lg text-sm font-semibold text-orange-600 hover:bg-orange-50 transition-all shadow-sm">Screamer</a>
+                            <a href="https://scratch.mit.edu/projects/277788097/" target="_blank" class="px-4 py-2 bg-white border border-slate-200 hover:border-orange-300 rounded-lg text-sm font-semibold text-orange-600 hover:bg-orange-50 transition-all shadow-sm">Juego Clicker</a>
+                            <a href="https://scratch.mit.edu/projects/805092880/" target="_blank" class="px-4 py-2 bg-white border border-slate-200 hover:border-orange-300 rounded-lg text-sm font-semibold text-orange-600 hover:bg-orange-50 transition-all shadow-sm">Piano Makey</a>
+                            <a href="https://scratch.mit.edu/projects/185587377/" target="_blank" class="px-4 py-2 bg-white border border-slate-200 hover:border-orange-300 rounded-lg text-sm font-semibold text-orange-600 hover:bg-orange-50 transition-all shadow-sm">Estudio pintura</a>
+                            <a href="https://scratch.mit.edu/projects/130747460/" target="_blank" class="px-4 py-2 bg-white border border-slate-200 hover:border-orange-300 rounded-lg text-sm font-semibold text-orange-600 hover:bg-orange-50 transition-all shadow-sm">Laberinto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-black mb-6 text-slate-800 tracking-tight">Guías y Documentación</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-orange-300 transition-all flex flex-col h-full group p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-2.5 bg-orange-50 text-orange-600 rounded-xl"><i data-lucide="files" class="w-6 h-6"></i></div>
+                            <h4 class="font-extrabold text-lg text-slate-800 leading-tight">Recursos para profes</h4>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Documento de recursos prácticos y consejos para educadores y profesores.</p>
+                        <a href="https://docs.google.com/document/d/1gqgKs9cNaiBO9UvAlB-_C9Z6nqmM7HRYx2wBmID4xuM/edit?usp=sharing" target="_blank" class="flex items-center gap-2 font-bold text-orange-600 hover:text-orange-800 transition-colors">
+                            <i data-lucide="external-link" class="w-4 h-4"></i> Abrir documento
                         </a>
-                        <p class="text-xs text-gray-500 mt-2">* Solo necesitan crearse una cuenta de estudiante gratuita en tinkercad.com</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-orange-300 transition-all flex flex-col h-full group p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-2.5 bg-orange-50 text-orange-600 rounded-xl"><i data-lucide="book" class="w-6 h-6"></i></div>
+                            <h4 class="font-extrabold text-lg text-slate-800 leading-tight">Guía docente 3.0</h4>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Guía completa paso a paso sobre el entorno y sus herramientas principales.</p>
+                        <a href="https://drive.google.com/file/d/0B-FbN3tM8wPOQVVuekxDb2RNOXFLV0lJak93R3FGem10X1F3/view?usp=sharing&resourcekey=0-j9YMJ0KqKaeCJ2dmGQzfJA" target="_blank" class="flex items-center gap-2 font-bold text-orange-600 hover:text-orange-800 transition-colors">
+                            <i data-lucide="external-link" class="w-4 h-4"></i> Abrir guía
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-orange-300 transition-all flex flex-col h-full group p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-2.5 bg-orange-50 text-orange-600 rounded-xl"><i data-lucide="brain" class="w-6 h-6"></i></div>
+                            <h4 class="font-extrabold text-lg text-slate-800 leading-tight">Actividades AACC</h4>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Memoria de actividades específicas para trabajar con alumnado de Altas Capacidades.</p>
+                        <a href="https://drive.google.com/file/d/1Lo_DIHpSQiAG0PgaBEnZ7juibm8Zv3_w/view?usp=sharing" target="_blank" class="flex items-center gap-2 font-bold text-orange-600 hover:text-orange-800 transition-colors">
+                            <i data-lucide="external-link" class="w-4 h-4"></i> Abrir memoria
+                        </a>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-orange-300 transition-all flex flex-col h-full group p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-2.5 bg-orange-50 text-orange-600 rounded-xl"><i data-lucide="graduation-cap" class="w-6 h-6"></i></div>
+                            <h4 class="font-extrabold text-lg text-slate-800 leading-tight">Tarjetas de Harvard</h4>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Guía oficial de Creative Computing con tarjetas de actividades de Scratch.</p>
+                        <a href="https://creativecomputing.gse.harvard.edu/guide/files/translations/Spanish.pdf" target="_blank" class="flex items-center gap-2 font-bold text-orange-600 hover:text-orange-800 transition-colors">
+                            <i data-lucide="external-link" class="w-4 h-4"></i> Descargar PDF
+                        </a>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-black mb-6 text-slate-800 tracking-tight">Talleres Temáticos y Bloques IA</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 relative">
+                        <h4 class="font-extrabold text-lg mb-1 text-slate-800">Scratch contra el Covid</h4>
+                        <p class="text-xs text-orange-600 font-bold mb-4 uppercase tracking-wider">Taller interactivo</p>
+                        <div class="space-y-2 mt-4">
+                            <a href="https://youtu.be/5ig-9862_Fw" target="_blank" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-red-600 text-sm font-medium"><i data-lucide="youtube" class="w-4 h-4"></i> Video en directo</a>
+                            <a href="https://prezi.com/view/AlcASBNK7NRweM8Rmc5s/" target="_blank" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-orange-600 text-sm font-medium"><i data-lucide="presentation" class="w-4 h-4"></i> Presentación</a>
+                            <a href="https://scratch.mit.edu/projects/389535770/" target="_blank" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-orange-600 text-sm font-medium"><i data-lucide="gamepad-2" class="w-4 h-4"></i> Juego completo</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 relative">
+                        <h4 class="font-extrabold text-lg mb-1 text-slate-800">Super Code Girl</h4>
+                        <p class="text-xs text-orange-600 font-bold mb-4 uppercase tracking-wider">Oracle 4 Girls</p>
+                        <div class="space-y-2 mt-4">
+                            <a href="https://youtu.be/-4TxTvjAQ2E" target="_blank" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-red-600 text-sm font-medium"><i data-lucide="youtube" class="w-4 h-4"></i> Video del taller</a>
+                            <a href="https://prezi.com/view/rH7WVv2Yer725NVu0eIv/" target="_blank" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-orange-600 text-sm font-medium"><i data-lucide="presentation" class="w-4 h-4"></i> Presentación</a>
+                            <a href="https://scratch.mit.edu/projects/145629751/" target="_blank" class="flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-orange-600 text-sm font-medium"><i data-lucide="gamepad-2" class="w-4 h-4"></i> Juego completo</a>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 bg-slate-800 rounded-2xl p-6 md:p-8 text-white mt-4">
+                        <h4 class="font-bold text-xl mb-4 flex items-center gap-2"><i data-lucide="brain-circuit" class="w-5 h-5 text-orange-400"></i> Inteligencia Artificial con bloques</h4>
+                        <p class="text-sm text-slate-300 mb-6">Actividades para entender cómo funciona la inteligencia artificial, cómo toma decisiones y la importancia de los datos.</p>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="https://scratch.mit.edu/projects/1208621527/editor?tutorial=face-sensing" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 border border-slate-600 rounded-lg text-sm font-medium text-white transition-colors">Detección facial</a>
+                            <a href="https://studio.code.org/courses/mix-move-ai-2025/units/1/lessons/1/levels/1" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 border border-slate-600 rounded-lg text-sm font-medium text-white transition-colors">Muévete con IA</a>
+                            <a href="https://studio.code.org/courses/dance-ai-2023/units/1/lessons/1/levels/1" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 border border-slate-600 rounded-lg text-sm font-medium text-white transition-colors">Fiesta de baile IA</a>
+                            <a href="https://studio.code.org/projects/music/5KkX91iUHjsO9CmVlDZ4b-3XsQLG_RQXHB1q1a2U-gg/edit" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 border border-slate-600 rounded-lg text-sm font-medium text-white transition-colors">Lab. de música</a>
+                            <a href="https://app.codemonkey.com/courses/ai-mini-course#1" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 border border-slate-600 rounded-lg text-sm font-medium text-white transition-colors">La IA es divertida</a>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="makecode" class="scroll-mt-24">
-                <div class="flex items-center gap-4 mb-8 border-b pb-4">
-                    <span class="text-5xl font-black text-purple-200">4</span>
-                    <h2 class="text-3xl font-bold text-gray-900">MAKECODE ARCADE - Crea tus propios videojuegos retro</h2>
+            <section id="minecraft" class="scroll-mt-24 bg-emerald-50/40 rounded-[2.5rem] p-6 md:p-10 border border-emerald-100">
+                <div class="flex items-end gap-4 mb-8">
+                    <h2 class="text-4xl font-black text-slate-800 tracking-tight">02. Minecraft</h2>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="glass-card p-8 rounded-3xl">
-                        <p class="text-gray-600 mb-6">MakeCode Arcade es una plataforma online de Microsoft para aprender a programar creando videojuegos tipo arcade, como los clásicos de 8 bits. Con bloques de código similares a los de Scratch (y también con posibilidad de usar JavaScript o Python), los niños pueden diseñar personajes, niveles, lógica de juego ¡y jugar a sus propias creaciones!</p>
-                        <div class="space-y-3">
-                            <a href="https://arcade.makecode.com/" target="_blank" class="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-purple-50 hover:text-purple-700 transition-colors group border border-gray-200">
-                                <span class="font-semibold flex items-center gap-2"><i data-lucide="gamepad" class="w-5 h-5"></i> Acceder al editor</span>
-                                <i data-lucide="external-link" class="w-4 h-4 opacity-50 group-hover:opacity-100"></i>
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed">Minecraft es un entorno donde los alumnos pueden experimentar con lógica, diseño y pensamiento computacional. Utilizamos <strong>Minecraft Education Edition</strong> para trabajar electrónica digital y circuitos lógicos visuales.</p>
+
+                <div class="w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-md mb-12 bg-emerald-900 border-4 border-white relative group">
+                    <img src="20230629_101052.jpg" alt="Clase de Minecraft" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/90 to-transparent flex flex-col justify-end items-center p-10 text-center">
+                        <h3 class="text-3xl md:text-4xl font-black text-white mb-4 drop-shadow-md">Curso de Electrónica Digital</h3>
+                        <p class="text-emerald-100 max-w-2xl mb-8 font-medium">Accede al temario completo, a los retos de programación y reproduce los videotutoriales paso a paso de redstone y circuitos.</p>
+                        
+                        <a href="minecraft.html" class="inline-flex items-center gap-3 px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white font-extrabold rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+                            <i data-lucide="play-square" class="w-6 h-6"></i> Acceder al Curso Interactivo
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tinkercad" class="scroll-mt-24 bg-blue-50/40 rounded-[2.5rem] p-6 md:p-10 border border-blue-100">
+                <div class="flex items-end gap-4 mb-8">
+                    <h2 class="text-4xl font-black text-slate-800 tracking-tight">03. Tinkercad</h2>
+                </div>
+                
+                <div class="w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-md mb-10 bg-blue-100 border-4 border-white">
+                    <img src="foto_tinkercad.jpg" alt="Diseño 3D y Arduino" class="w-full h-full object-cover">
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-blue-500"></div>
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-black text-slate-800 tracking-tight">Diseño 3D simplificado y Simulación</h3>
+                        <p class="text-slate-600 text-lg leading-relaxed">Plataforma online gratuita que permite a jóvenes iniciarse en el diseño 3D de forma sencilla. Basada en figuras geométricas, pueden crear desde objetos simples hasta modelos para impresión 3D, y simular circuitos con Arduino.</p>
+                        
+                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100 my-4">
+                            <h4 class="font-bold text-blue-900 mb-1 flex items-center gap-2"><i data-lucide="smartphone" class="w-4 h-4"></i> Proyecto del curso:</h4>
+                            <p class="text-sm text-blue-800">Diseño completo de un <strong>Soporte para móviles</strong> y programación de placas.</p>
+                        </div>
+
+                        <div class="pt-4 flex flex-wrap gap-4">
+                            <a href="https://www.tinkercad.com/" target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-sm">
+                                <i data-lucide="cuboid" class="w-5 h-5"></i> Ir a Tinkercad
                             </a>
                         </div>
                     </div>
-                    <div class="relative rounded-3xl overflow-hidden shadow-lg h-full min-h-[250px]">
-                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Retro Gaming" class="absolute inset-0 w-full h-full object-cover">
-                    </div>
                 </div>
             </section>
 
-            <section id="roblox" class="scroll-mt-24">
-                <div class="flex items-center gap-4 mb-8 border-b pb-4">
-                    <span class="text-5xl font-black text-gray-300">5</span>
-                    <h2 class="text-3xl font-bold text-gray-900">ROBLOX - Crea juegos 3D y aprende a programar</h2>
+            <section id="makecode" class="scroll-mt-24 bg-purple-50/40 rounded-[2.5rem] p-6 md:p-10 border border-purple-100">
+                <div class="flex items-end gap-4 mb-8">
+                    <h2 class="text-4xl font-black text-slate-800 tracking-tight">04. MakeCode Arcade</h2>
                 </div>
-                <div class="glass-card rounded-3xl p-8 border border-gray-200 bg-gradient-to-br from-white to-gray-50">
-                    <div class="flex flex-col md:flex-row gap-8">
-                        <div class="w-full md:w-2/3">
-                            <p class="text-lg text-gray-700 mb-6">Roblox Studio permite a los jóvenes crear sus propios videojuegos 3D y mundos interactivos utilizando programación con el lenguaje Lua. Es una herramienta potente con un gran potencial educativo, especialmente para quienes quieren ir más allá del jugador y convertirse en creadores.</p>
-                            
-                            <div class="space-y-4">
-                                <a href="https://www.roblox.com/create" target="_blank" class="flex items-center gap-3 text-brand-600 font-bold hover:underline">
-                                    <div class="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center"><i data-lucide="download" class="w-5 h-5"></i></div>
-                                    Descarga Roblox Studio (Gratis)
-                                </a>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-1/3">
-                            <img src="20211114_190813.jpg" alt="Roblox 3D" class="rounded-2xl shadow-md w-full h-48 object-cover">
+
+                <div class="bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-sm relative overflow-hidden flex flex-col md:flex-row gap-8 items-center">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-purple-500"></div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-black text-slate-800 mb-4 tracking-tight">Crea tus propios videojuegos retro</h3>
+                        <p class="text-slate-600 text-lg mb-8 leading-relaxed">Plataforma online de Microsoft para programar videojuegos tipo arcade de 8 bits. Diseña personajes, niveles, lógica de juego ¡y juega a tus propias creaciones con bloques, JavaScript o Python!</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://arcade.makecode.com/" target="_blank" class="flex items-center gap-2 px-6 py-3.5 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl transition-all shadow-sm">
+                                <i data-lucide="gamepad-2" class="w-5 h-5"></i> Acceder al Editor
+                            </a>
+                            <a href="https://arcade.makecode.com/#tutorials" target="_blank" class="flex items-center gap-2 px-6 py-3.5 bg-slate-50 border border-slate-200 text-slate-700 hover:bg-purple-50 hover:text-purple-700 hover:border-purple-200 font-bold rounded-xl transition-all">
+                                <i data-lucide="library" class="w-5 h-5"></i> Explorar Tutoriales
+                            </a>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section id="microbit" class="scroll-mt-24">
-                <div class="flex items-center gap-4 mb-8 border-b pb-4">
-                    <span class="text-5xl font-black text-cyan-200">6</span>
-                    <h2 class="text-3xl font-bold text-gray-900">MICRO:BIT - Programación y electrónica en una placa</h2>
-                </div>
-                <div class="glass-card rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-sm">
-                    <div class="w-full md:w-1/2 p-8">
-                        <p class="text-gray-600 mb-6 text-lg">Micro:bit es una pequeña placa programable que permite a los niños aprender conceptos de programación, electrónica y sensores de una forma práctica y visual. Con su matriz de luces LED, botones, sensores y conexión por USB o Bluetooth, pueden crear proyectos interactivos como juegos, termómetros, alarmas o brújulas digitales.</p>
-                        <a href="https://makecode.microbit.org/" target="_blank" class="inline-block bg-gray-900 text-white font-semibold py-3 px-6 rounded-xl hover:bg-gray-800 transition-colors">Editor de MakeCode</a>
-                    </div>
-                    <div class="w-full md:w-1/2 relative min-h-[250px] bg-cyan-50">
-                        <img src="IMG_6826.JPG" alt="Microbit Circuit" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden shadow-md border-4 border-white">
+                        <img src="foto_makecode.jpg" alt="Videojuegos Arcade" class="w-full h-full object-cover">
                     </div>
                 </div>
             </section>
 
-            <section id="makeymakey" class="scroll-mt-24">
-                <div class="flex items-center gap-4 mb-8 border-b pb-4">
-                    <span class="text-5xl font-black text-yellow-500">7</span>
-                    <h2 class="text-3xl font-bold text-gray-900">MAKEY MAKEY - Inventos interactivos con objetos cotidianos</h2>
+            <section id="roblox" class="scroll-mt-24 bg-slate-100/50 rounded-[2.5rem] p-6 md:p-10 border border-slate-200">
+                <div class="flex items-end gap-4 mb-8">
+                    <h2 class="text-4xl font-black text-slate-800 tracking-tight">05. Roblox Studio</h2>
                 </div>
-                <div class="glass-card rounded-3xl p-8 shadow-sm">
-                    <p class="text-gray-600 mb-6 text-lg">Makey Makey es una placa electrónica que permite convertir casi cualquier objeto conductor (como frutas, plastilina o incluso grafito) en un botón o una tecla. Es una herramienta fantástica para introducir conceptos básicos de electrónica y programación de forma tangible, creativa y lúdica.</p>
-                    
-                    <div class="bg-yellow-50 p-6 rounded-2xl border border-yellow-100">
-                        <h4 class="font-bold text-gray-900 mb-4">Proyectos y Ejemplos</h4>
-                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
-                            <li class="flex items-center gap-2"><i data-lucide="music" class="w-4 h-4 text-yellow-600"></i> Proyecto destacado: GUITAR HERO</li>
-                            <li class="flex items-center gap-2"><i data-lucide="music" class="w-4 h-4 text-yellow-600"></i> Introducción a Makey Makey: Banana Bongos</li>
-                            <li class="flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4 text-yellow-600"></i> ¿Qué materiales son conductores?</li>
-                            <li class="flex items-center gap-2"><i data-lucide="lightbulb" class="w-4 h-4 text-yellow-600"></i> Encender un LED con Makey Makey</li>
-                            <li class="flex items-center gap-2"><i data-lucide="smartphone" class="w-4 h-4 text-yellow-600"></i> App del piano interactivo</li>
-                            <li class="flex items-center gap-2"><i data-lucide="pen-tool" class="w-4 h-4 text-yellow-600"></i> Circuito con lápiz: Dibuja un instrumento</li>
-                        </ul>
+
+                <div class="w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-md mb-10 bg-slate-200 border-4 border-white">
+                    <img src="20211114_190813.jpg" alt="Diseño en Roblox" class="w-full h-full object-cover">
+                </div>
+
+                <div class="bg-slate-800 rounded-3xl p-8 md:p-12 text-white shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-slate-400"></div>
+                    <h3 class="text-3xl font-black mb-4 text-white tracking-tight">Crea juegos 3D y aprende a programar</h3>
+                    <p class="text-slate-300 text-lg mb-8 max-w-2xl leading-relaxed">Permite a los jóvenes crear sus propios videojuegos 3D interactivos utilizando programación con el lenguaje Lua, pasando de jugadores a creadores.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://www.roblox.com/create" target="_blank" class="flex items-center justify-center gap-2 px-6 py-4 bg-white text-slate-900 hover:bg-slate-100 font-extrabold rounded-xl transition-all shadow-md">
+                            <i data-lucide="download" class="w-5 h-5"></i> Descargar Roblox Studio
+                        </a>
+                        <a href="#" class="flex items-center justify-center gap-2 px-6 py-4 bg-slate-700 border border-slate-600 hover:bg-slate-600 text-white font-extrabold rounded-xl transition-all">
+                            <i data-lucide="play-square" class="w-5 h-5"></i> Tutoriales
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <section id="beebot" class="scroll-mt-24">
-                <div class="flex items-center gap-4 mb-8 border-b pb-4">
-                    <span class="text-5xl font-black text-yellow-400">8</span>
-                    <h2 class="text-3xl font-bold text-gray-900">BEE-BOT - Iniciación a la programación y pensamiento lógico</h2>
+            <section id="robotica" class="scroll-mt-24 bg-rose-50/40 rounded-[2.5rem] p-6 md:p-10 border border-rose-100">
+                <div class="flex items-end gap-4 mb-8">
+                    <h2 class="text-4xl font-black text-slate-800 tracking-tight">06. Robótica Educativa</h2>
                 </div>
                 
-                <div class="bg-white rounded-3xl shadow-sm border border-gray-200 overflow-hidden mb-8">
-                    <div class="h-64 relative bg-yellow-50">
-                        <img src="foto.jpg" alt="Robótica Infantil" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-8">
-                        <p class="text-gray-600 text-lg mb-6">Bee-Bot es un pequeño robot educativo con forma de abeja diseñado para introducir a los más pequeños en el mundo de la programación de una forma manipulativa, visual y muy intuitiva. A través de botones físicos situados en su parte superior, los alumnos pueden programar secuencias de movimientos.</p>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed">Construcción y programación de robots físicos interactuando con el mundo real, adaptados según la etapa educativa.</p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-rose-500"></div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="p-2 bg-rose-50 text-rose-600 rounded-lg"><i data-lucide="blocks" class="w-5 h-5"></i></div>
+                            <h3 class="text-2xl font-black text-slate-800 tracking-tight">Lego WEDO 2.0</h3>
+                            <span class="ml-auto text-xs font-bold bg-slate-100 px-3 py-1 rounded-full text-slate-600 uppercase">Primaria</span>
+                        </div>
+                        <div class="space-y-6 flex-1">
                             <div>
-                                <h4 class="font-bold text-gray-900 mb-3 flex items-center gap-2"><i data-lucide="puzzle" class="w-5 h-5 text-brand-500"></i> Actividades para practicar</h4>
-                                <ul class="text-sm text-gray-600 space-y-2">
-                                    <li>1. Primeros pasos con Bee-Bot</li>
-                                    <li>2. Encuentra el tesoro</li>
-                                    <li>3. Historias con Bee-Bot</li>
-                                    <li>4. Matemáticas con Bee-Bot</li>
-                                    <li>5. Retos de lógica</li>
+                                <h4 class="font-bold text-slate-800 mb-2 border-b border-slate-100 pb-1">Contenidos</h4>
+                                <ul class="space-y-1.5 text-sm text-slate-600">
+                                    <li>• <strong class="text-slate-700">Mecanismos:</strong> Engranajes, poleas, ejes.</li>
+                                    <li>• <strong class="text-slate-700">Electrónica:</strong> Sensores, LEDs, motores, HUB.</li>
+                                    <li>• Programación en interfaz WEDO 2.0</li>
+                                    <li>• Conexión del robot a Scratch</li>
                                 </ul>
                             </div>
-                            <div class="flex items-center justify-center">
-                                <img src="BeeBot.jpg" alt="Bee-Bot" class="w-32 h-32 rounded-xl shadow-md border-4 border-yellow-300 transform rotate-3">
+                            <div class="bg-rose-50/50 p-4 rounded-xl border border-rose-100">
+                                <h4 class="font-bold text-rose-800 mb-2 text-sm uppercase tracking-wider">Proyectos iniciales</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-white border border-rose-200 rounded-md text-xs font-semibold text-rose-700">Gallina / Pterodáctilo</span>
+                                    <span class="px-3 py-1 bg-white border border-rose-200 rounded-md text-xs font-semibold text-rose-700">Coche motorizado</span>
+                                    <span class="px-3 py-1 bg-white border border-rose-200 rounded-md text-xs font-semibold text-rose-700">Helicóptero</span>
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-blue-600"></div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="p-2 bg-blue-50 text-blue-600 rounded-lg"><i data-lucide="bot" class="w-5 h-5"></i></div>
+                            <h3 class="text-2xl font-black text-slate-800 tracking-tight">Robots mBot</h3>
+                            <span class="ml-auto text-xs font-bold bg-slate-100 px-3 py-1 rounded-full text-slate-600 uppercase">Secundaria</span>
+                        </div>
+                        <div class="space-y-6 flex-1">
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-2 border-b border-slate-100 pb-1">Electrónica (Basada en Arduino)</h4>
+                                <ul class="space-y-1.5 text-sm text-slate-600">
+                                    <li>• <strong class="text-slate-700">Entradas:</strong> IR, ultrasonidos, módulos.</li>
+                                    <li>• <strong class="text-slate-700">Salidas:</strong> LED RGB, Buzzer (Zumbador).</li>
+                                    <li>• Señales digitales y analógicas</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-2 border-b border-slate-100 pb-1">Programación (mBlock)</h4>
+                                <ul class="space-y-1.5 text-sm text-slate-600">
+                                    <li>• Interfaz mBlock y conexión de placa.</li>
+                                    <li>• Lectura y comprobación de entradas.</li>
+                                    <li>• Lógica de motores: Robot en movimiento.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="placas" class="scroll-mt-24 bg-cyan-50/40 rounded-[2.5rem] p-6 md:p-10 border border-cyan-100">
+                <div class="flex items-end gap-4 mb-8">
+                    <h2 class="text-4xl font-black text-slate-800 tracking-tight">07. Placas y Circuitos</h2>
+                </div>
+
+                <div class="w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-md mb-12 bg-cyan-100 border-4 border-white">
+                    <img src="IMG_6826.JPG" alt="Placas y Circuitos" class="w-full h-full object-cover">
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm relative overflow-hidden flex flex-col h-full">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-cyan-500"></div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <h3 class="text-2xl font-black text-slate-800 tracking-tight">Micro:bit</h3>
+                        </div>
+                        <p class="text-slate-600 mb-8 flex-1 leading-relaxed text-base">Pequeña placa programable para aprender programación, electrónica y sensores de forma práctica. Cuenta con matriz de luces LED, botones y conexión Bluetooth para crear brújulas, alarmas o termómetros.</p>
+                        <div class="space-y-3">
+                            <a href="https://makecode.microbit.org/#" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 border border-slate-200 text-slate-700 hover:bg-cyan-50 hover:text-cyan-700 hover:border-cyan-200 rounded-xl font-bold transition-all group">
+                                <span class="flex items-center gap-2"><i data-lucide="code" class="w-4 h-4"></i> Editor de MakeCode</span> 
+                                <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:text-cyan-600"></i>
+                            </a>
+                            <a href="https://microbit.org/es-es/projects/make-it-code-it/" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 border border-slate-200 text-slate-700 hover:bg-cyan-50 hover:text-cyan-700 hover:border-cyan-200 rounded-xl font-bold transition-all group">
+                                <span class="flex items-center gap-2"><i data-lucide="folder-search" class="w-4 h-4"></i> Colección de proyectos</span> 
+                                <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:text-cyan-600"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm relative overflow-hidden flex flex-col h-full">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-accent-500"></div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <h3 class="text-2xl font-black text-slate-800 tracking-tight">Makey Makey</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6 flex-1 leading-relaxed text-base">Convierte casi cualquier objeto conductor (como frutas, plastilina o grafito) en un botón o tecla. Fantástico para introducir conceptos básicos de electrónica (circuito cerrado/abierto) de forma lúdica.</p>
+                        
+                        <div class="space-y-3">
+                            <a href="https://makeymakey.com/blogs/how-to-instructions/first-time-demo-makey-makey-banana-bongos" target="_blank" class="flex items-center justify-between p-3 bg-slate-50 border border-slate-200 text-slate-700 hover:bg-accent-50 hover:text-accent-700 hover:border-accent-200 rounded-xl font-bold transition-all group text-sm">
+                                <span class="flex items-center gap-2"><i data-lucide="music" class="w-4 h-4"></i> Intro: Banana Bongos</span> 
+                                <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:text-accent-600"></i>
+                            </a>
+                            <a href="https://docs.google.com/document/d/1MuE2r2NSFAKOtQYGGZc7wefW5zZV_sRQ7MEnbyrDZxk/edit?tab=t.0" target="_blank" class="flex items-center justify-between p-3 bg-slate-50 border border-slate-200 text-slate-700 hover:bg-accent-50 hover:text-accent-700 hover:border-accent-200 rounded-xl font-bold transition-all group text-sm">
+                                <span class="flex items-center gap-2"><i data-lucide="file-text" class="w-4 h-4"></i> Guía del profesorado</span> 
+                                <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:text-accent-600"></i>
+                            </a>
+                            <a href="https://prezi.com/view/6qukznkQUnnBA5YRgjxz/" target="_blank" class="flex items-center justify-between p-3 bg-slate-50 border border-slate-200 text-slate-700 hover:bg-accent-50 hover:text-accent-700 hover:border-accent-200 rounded-xl font-bold transition-all group text-sm">
+                                <span class="flex items-center gap-2"><i data-lucide="presentation" class="w-4 h-4"></i> Presentación Prezi</span> 
+                                <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:text-accent-600"></i>
+                            </a>
+                            
+                            <details class="group/acc mt-2">
+                                <summary class="list-none [&::-webkit-details-marker]:hidden flex justify-between items-center font-bold cursor-pointer bg-slate-800 hover:bg-slate-700 rounded-xl px-4 py-3 text-white transition-colors text-sm">
+                                    <span class="flex items-center gap-2"><i data-lucide="folder-open" class="w-4 h-4"></i> Explorar todos los retos</span>
+                                    <i data-lucide="chevron-down" class="w-4 h-4 text-slate-300 group-open/acc:rotate-180 transition-transform duration-300"></i>
+                                </summary>
+                                <div class="mt-3 space-y-2 p-4 bg-slate-50 border border-slate-200 rounded-xl shadow-inner text-sm">
+                                    <p class="font-bold text-accent-700 border-b border-slate-200 pb-1 mb-2">Proyecto Destacado: Guitar Hero</p>
+                                    <a href="https://makeymakey.com/blogs/how-to-instructions/creating-a-guitar-in-scratch-or-soundplant" target="_blank" class="flex items-center gap-2 hover:text-accent-600 text-slate-600 py-1"><i data-lucide="hammer" class="w-4 h-4"></i> Construcción física</a>
+                                    <a href="https://scratch.mit.edu/projects/1202209149/" target="_blank" class="flex items-center gap-2 hover:text-accent-600 text-slate-600 py-1"><i data-lucide="code" class="w-4 h-4"></i> Plantilla Scratch (vacía)</a>
+                                    <a href="https://scratch.mit.edu/projects/1202211958/" target="_blank" class="flex items-center gap-2 hover:text-accent-600 text-slate-600 py-1"><i data-lucide="gamepad" class="w-4 h-4"></i> Proyecto Scratch simplificado</a>
+                                    
+                                    <p class="font-bold text-accent-700 border-b border-slate-200 pb-1 mt-4 mb-2">Más Experimentos</p>
+                                    <a href="https://apps.makeymakey.com/v2/#alarm" target="_blank" class="flex items-center gap-2 hover:text-accent-600 text-slate-600 py-1"><i data-lucide="bell" class="w-4 h-4"></i> App Alarma (Cadena humana)</a>
+                                    <a href="https://makeymakey.com/blogs/how-to-instructions/invention-literacy-foundations-what-is-conductive" target="_blank" class="flex items-center gap-2 hover:text-accent-600 text-slate-600 py-1"><i data-lucide="zap" class="w-4 h-4"></i> ¿Qué materiales son conductores?</a>
+                                    <a href="https://makeymakey.com/blogs/how-to-instructions/lighting-an-led-with-makey-makey" target="_blank" class="flex items-center gap-2 hover:text-accent-600 text-slate-600 py-1"><i data-lucide="lightbulb" class="w-4 h-4"></i> Encender un LED</a>
+                                    <a href="https://apps.makeymakey.com/play/#piano" target="_blank" class="flex items-center gap-2 hover:text-accent-600 text-slate-600 py-1"><i data-lucide="piano" class="w-4 h-4"></i> App Piano Interactivo</a>
+                                    <a href="https://makeymakey.com/blogs/how-to-instructions/lesson-four-draw-a-playable-instrument" target="_blank" class="flex items-center gap-2 hover:text-accent-600 text-slate-600 py-1"><i data-lucide="pen-tool" class="w-4 h-4"></i> Circuito con lápiz</a>
+                                    <a href="https://makeymakey.com/blogs/how-to-instructions/buzzer-app-creating-quiz-show-buttons" target="_blank" class="flex items-center gap-2 hover:text-accent-600 text-slate-600 py-1"><i data-lucide="help-circle" class="w-4 h-4"></i> Botones de concurso</a>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="beebot" class="scroll-mt-24 bg-yellow-50/40 rounded-[2.5rem] p-6 md:p-10 border border-yellow-100">
+                <div class="flex items-end gap-4 mb-8">
+                    <h2 class="text-4xl font-black text-slate-800 tracking-tight">08. Bee-Bot</h2>
+                </div>
+
+                <div class="w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-md mb-10 bg-yellow-100 border-4 border-white">
+                    <img src="foto.jpg" alt="Robótica Infantil Bee-Bot" class="w-full h-full object-cover">
+                </div>
+                
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 md:p-10 mb-12 flex flex-col md:flex-row gap-8 items-center shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-yellow-400"></div>
+                    <div class="w-32 h-32 bg-yellow-400 rounded-2xl shadow-md shrink-0 overflow-hidden border-4 border-white rotate-[-2deg]">
+                        <img src="BeeBot.jpg" alt="Bee-Bot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-black text-slate-800 mb-3 tracking-tight">Iniciación al pensamiento lógico <span class="text-yellow-600">(4-6 años)</span></h3>
+                        <p class="text-slate-600 mb-6 text-lg leading-relaxed">Robot educativo con forma de abeja. Ideal para trabajar secuenciación, resolución de problemas, orientación espacial y ensayo/error de forma manipulativa y sin pantallas.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="https://youtu.be/t1NxCavZqql" target="_blank" class="flex items-center gap-2 px-5 py-3 bg-slate-50 border border-slate-200 hover:border-yellow-300 rounded-xl font-bold text-slate-700 hover:bg-yellow-50 transition-all shadow-sm">
+                                <i data-lucide="video" class="text-red-500 w-5 h-5"></i> Video del Taller
+                            </a>
+                            <a href="https://prezi.com/view/8GcfmzrBS8jysDHZeA6R/" target="_blank" class="flex items-center gap-2 px-5 py-3 bg-slate-50 border border-slate-200 hover:border-yellow-300 rounded-xl font-bold text-slate-700 hover:bg-yellow-50 transition-all shadow-sm">
+                                <i data-lucide="presentation" class="text-brand-500 w-5 h-5"></i> Presentación Prezi
+                            </a>
+                            <a href="#" class="flex items-center gap-2 px-5 py-3 bg-slate-50 border border-slate-200 hover:border-yellow-300 rounded-xl font-bold text-slate-700 hover:bg-yellow-50 transition-all shadow-sm">
+                                <i data-lucide="file-text" class="text-slate-400 w-5 h-5"></i> Info Padres (PDF)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex flex-col h-full">
+                        <h4 class="font-extrabold text-lg mb-2 text-slate-800 leading-tight">1. Primeros pasos</h4>
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Programar recorridos simples (ir de un punto a otro) sobre una cuadrícula.</p>
+                        <a href="#" class="mt-auto flex justify-between items-center font-bold bg-slate-50 hover:bg-yellow-50 border border-slate-200 hover:border-yellow-200 rounded-xl px-4 py-3 text-slate-700 hover:text-yellow-700 transition-colors">
+                            <span class="flex items-center gap-2 text-sm"><i data-lucide="puzzle" class="w-4 h-4"></i> Actividad guiada</span>
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex flex-col h-full">
+                        <h4 class="font-extrabold text-lg mb-2 text-slate-800 leading-tight">2. Encuentra el tesoro</h4>
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Llegar al objetivo evitando obstáculos o buscando el camino más corto.</p>
+                        <a href="#" class="mt-auto flex justify-between items-center font-bold bg-slate-50 hover:bg-yellow-50 border border-slate-200 hover:border-yellow-200 rounded-xl px-4 py-3 text-slate-700 hover:text-yellow-700 transition-colors">
+                            <span class="flex items-center gap-2 text-sm"><i data-lucide="map" class="w-4 h-4"></i> Actividad práctica</span>
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex flex-col h-full">
+                        <h4 class="font-extrabold text-lg mb-2 text-slate-800 leading-tight">3. Historias con Bee-Bot</h4>
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Crear escenarios y contar historias en cada desplazamiento.</p>
+                        <a href="#" class="mt-auto flex justify-between items-center font-bold bg-slate-50 hover:bg-yellow-50 border border-slate-200 hover:border-yellow-200 rounded-xl px-4 py-3 text-slate-700 hover:text-yellow-700 transition-colors">
+                            <span class="flex items-center gap-2 text-sm"><i data-lucide="book-open" class="w-4 h-4"></i> Actividad creativa</span>
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex flex-col h-full">
+                        <h4 class="font-extrabold text-lg mb-2 text-slate-800 leading-tight">4. Matemáticas</h4>
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Usar números en la cuadrícula para resolver sumas, restas y secuencias.</p>
+                        <a href="#" class="mt-auto flex justify-between items-center font-bold bg-slate-50 hover:bg-yellow-50 border border-slate-200 hover:border-yellow-200 rounded-xl px-4 py-3 text-slate-700 hover:text-yellow-700 transition-colors">
+                            <span class="flex items-center gap-2 text-sm"><i data-lucide="calculator" class="w-4 h-4"></i> Lógica matemática</span>
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 flex flex-col h-full">
+                        <h4 class="font-extrabold text-lg mb-2 text-slate-800 leading-tight">5. Retos de lógica</h4>
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Planificar la secuencia obligando a pasar por ciertos puntos antes del destino.</p>
+                        <a href="#" class="mt-auto flex justify-between items-center font-bold bg-slate-50 hover:bg-yellow-50 border border-slate-200 hover:border-yellow-200 rounded-xl px-4 py-3 text-slate-700 hover:text-yellow-700 transition-colors">
+                            <span class="flex items-center gap-2 text-sm"><i data-lucide="brain" class="w-4 h-4"></i> Desafíos</span>
+                        </a>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl shadow-md border border-slate-700 p-6 flex flex-col h-full">
+                        <h4 class="font-extrabold text-lg mb-2 leading-tight flex items-center gap-2 text-white"><i data-lucide="smartphone" class="w-5 h-5 text-yellow-400"></i> Opciones Digitales</h4>
+                        <p class="text-sm text-slate-300 mb-6 flex-1">Si no dispones del robot físico, puedes usar los simuladores (Busca "Bee-Bot App" en tu móvil o abre el entorno web).</p>
+                        <a href="#" class="mt-auto flex justify-between items-center font-bold bg-slate-700 hover:bg-slate-600 border border-slate-600 rounded-xl px-4 py-3 text-white transition-colors">
+                            <span class="flex items-center gap-2 text-sm"><i data-lucide="external-link" class="w-4 h-4"></i> Blue-Bot Online</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400"></i>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -477,8 +623,14 @@
         </main>
     </div>
 
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-12">
-        <p>Recopilación de recursos educativos HILCODE.</p>
+    <footer class="bg-white border-t border-slate-200 py-12 mt-12 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <img src="logo%20horizontal1.png" alt="How I Learned Code" class="h-8 w-auto opacity-70">
+            </div>
+            <p class="text-sm font-semibold text-slate-600">Guía de Recursos - Iniciación a la programación en el aula</p>
+            <p class="text-xs mt-2 text-slate-400 font-medium">How I Learned Code</p>
+        </div>
     </footer>
 
     <script>
