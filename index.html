@@ -43,7 +43,7 @@
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.4);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); 
+            box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.08); 
         }
         body {
             background-color: #f8fafc;
@@ -75,6 +75,7 @@
                     <a href="#tinkercad" class="text-slate-600 hover:text-blue-600 font-semibold transition-colors">Diseño 3D</a>
                     <a href="#makecode" class="text-slate-600 hover:text-purple-600 font-semibold transition-colors">Arcade</a>
                     <a href="#roblox" class="text-slate-600 hover:text-slate-900 font-semibold transition-colors">Roblox</a>
+                    <a href="#robotica" class="text-slate-600 hover:text-rose-600 font-semibold transition-colors">Robótica</a>
                     <a href="#placas" class="text-slate-600 hover:text-cyan-600 font-semibold transition-colors">Placas</a>
                     <a href="#beebot" class="text-slate-600 hover:text-yellow-600 font-semibold transition-colors">Bee-Bot</a>
                 </div>
@@ -116,14 +117,17 @@
                 <a href="#makecode" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-purple-50 transition-colors text-slate-700 hover:text-purple-700 font-semibold">
                     <i data-lucide="gamepad-2" class="w-5 h-5 opacity-70"></i> <span class="text-sm">4. MakeCode</span>
                 </a>
-                <a href="#roblox" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-100 transition-colors text-slate-700 hover:text-slate-900 font-semibold">
+                <a href="#roblox" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-200 transition-colors text-slate-700 hover:text-slate-900 font-semibold">
                     <i data-lucide="layout-grid" class="w-5 h-5 opacity-70"></i> <span class="text-sm">5. Roblox</span>
                 </a>
+                <a href="#robotica" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-rose-50 transition-colors text-slate-700 hover:text-rose-600 font-semibold">
+                    <i data-lucide="bot" class="w-5 h-5 opacity-70"></i> <span class="text-sm">6. Robótica</span>
+                </a>
                 <a href="#placas" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-cyan-50 transition-colors text-slate-700 hover:text-cyan-700 font-semibold">
-                    <i data-lucide="cpu" class="w-5 h-5 opacity-70"></i> <span class="text-sm">6. Micro:bit & Makey</span>
+                    <i data-lucide="cpu" class="w-5 h-5 opacity-70"></i> <span class="text-sm">7. Micro:bit & Makey</span>
                 </a>
                 <a href="#beebot" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-yellow-50 transition-colors text-slate-700 hover:text-yellow-700 font-semibold">
-                    <i data-lucide="bug" class="w-5 h-5 opacity-70"></i> <span class="text-sm">7. Bee-Bot</span>
+                    <i data-lucide="bug" class="w-5 h-5 opacity-70"></i> <span class="text-sm">8. Bee-Bot</span>
                 </a>
             </div>
         </aside>
@@ -179,23 +183,23 @@
                 </div>
             </section>
 
-            <section id="scratch" class="scroll-mt-24 bg-orange-50/40 rounded-[2.5rem] p-6 md:p-10 border border-orange-100 shadow-sm">
+            <section id="scratch" class="scroll-mt-24 bg-orange-50/40 rounded-[2.5rem] p-6 md:p-10 border border-orange-100">
                 <div class="flex items-end gap-4 mb-8">
                     <h2 class="text-4xl font-black text-slate-800 tracking-tight">01. Scratch</h2>
                 </div>
                 
                 <p class="text-lg text-slate-600 mb-8 leading-relaxed">Programación creativa y pensamiento crítico. A través de bloques de colores, los alumnos pueden crear animaciones, historias interactivas y juegos sin necesidad de saber código tradicional.</p>
 
-                <div class="w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-md mb-12 bg-white border-4 border-white">
+                <div class="w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-md mb-12 bg-slate-200 border-4 border-white">
                     <img src="foto_scratch.jpg" alt="Clase de Scratch" class="w-full h-full object-cover">
                 </div>
 
-                <h3 class="text-2xl font-black mb-6 text-slate-800 tracking-tight flex items-center gap-3">
-                    <div class="p-2.5 bg-orange-100 text-orange-600 rounded-xl"><i data-lucide="list-tree" class="w-6 h-6"></i></div>
-                    Temario y Proyectos
-                </h3>
                 <div class="bg-white rounded-3xl shadow-sm border border-orange-100 p-8 mb-12 relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-full h-1.5 bg-orange-500"></div>
+                    <h3 class="text-2xl font-black mb-6 text-slate-800 tracking-tight flex items-center gap-3">
+                        <div class="p-2.5 bg-orange-100 text-orange-600 rounded-xl"><i data-lucide="list-tree" class="w-6 h-6"></i></div>
+                        Temario y Proyectos
+                    </h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                         <div>
                             <h4 class="font-bold text-lg mb-4 text-orange-700 border-b border-orange-100 pb-2">Conceptos de Programación</h4>
@@ -210,7 +214,7 @@
                         <div>
                             <h4 class="font-bold text-lg mb-4 text-orange-700 border-b border-orange-100 pb-2">Diseño de Videojuegos</h4>
                             <ul class="space-y-2 text-sm text-slate-600">
-                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Animaciones, objetos, sprites y disfraces</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Animaciones, sprites y disfraces</li>
                                 <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Sonidos y diálogos</li>
                                 <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Movimiento, coordenadas 2D y colisiones</li>
                                 <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Marcadores y temporizadores</li>
@@ -233,7 +237,7 @@
 
                 <h3 class="text-2xl font-black mb-6 text-slate-800 tracking-tight">Guías y Documentación</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-                    <div class="bg-white rounded-2xl shadow-sm border border-orange-100 hover:border-orange-300 hover:shadow-md transition-all flex flex-col h-full p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-orange-100 hover:border-orange-300 transition-all flex flex-col h-full group p-6">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="p-2.5 bg-orange-50 text-orange-600 rounded-xl"><i data-lucide="files" class="w-6 h-6"></i></div>
                             <h4 class="font-extrabold text-lg text-slate-800 leading-tight">Recursos para profes</h4>
@@ -243,7 +247,7 @@
                             <i data-lucide="external-link" class="w-4 h-4"></i> Abrir documento
                         </a>
                     </div>
-                    <div class="bg-white rounded-2xl shadow-sm border border-orange-100 hover:border-orange-300 hover:shadow-md transition-all flex flex-col h-full p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-orange-100 hover:border-orange-300 transition-all flex flex-col h-full group p-6">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="p-2.5 bg-orange-50 text-orange-600 rounded-xl"><i data-lucide="book" class="w-6 h-6"></i></div>
                             <h4 class="font-extrabold text-lg text-slate-800 leading-tight">Guía docente 3.0</h4>
@@ -253,7 +257,7 @@
                             <i data-lucide="external-link" class="w-4 h-4"></i> Abrir guía
                         </a>
                     </div>
-                    <div class="bg-white rounded-2xl shadow-sm border border-orange-100 hover:border-orange-300 hover:shadow-md transition-all flex flex-col h-full p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-orange-100 hover:border-orange-300 transition-all flex flex-col h-full group p-6">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="p-2.5 bg-orange-50 text-orange-600 rounded-xl"><i data-lucide="brain" class="w-6 h-6"></i></div>
                             <h4 class="font-extrabold text-lg text-slate-800 leading-tight">Actividades AACC</h4>
@@ -263,7 +267,7 @@
                             <i data-lucide="external-link" class="w-4 h-4"></i> Abrir memoria
                         </a>
                     </div>
-                    <div class="bg-white rounded-2xl shadow-sm border border-orange-100 hover:border-orange-300 hover:shadow-md transition-all flex flex-col h-full p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-orange-100 hover:border-orange-300 transition-all flex flex-col h-full group p-6">
                         <div class="flex items-center gap-3 mb-4">
                             <div class="p-2.5 bg-orange-50 text-orange-600 rounded-xl"><i data-lucide="graduation-cap" class="w-6 h-6"></i></div>
                             <h4 class="font-extrabold text-lg text-slate-800 leading-tight">Tarjetas de Harvard</h4>
@@ -399,7 +403,7 @@
                 </div>
             </section>
 
-            <section id="minecraft" class="scroll-mt-24 bg-emerald-50/40 rounded-[2.5rem] p-6 md:p-10 border border-emerald-100 shadow-sm">
+            <section id="minecraft" class="scroll-mt-24 bg-emerald-50/40 rounded-[2.5rem] p-6 md:p-10 border border-emerald-100">
                 <div class="flex items-end gap-4 mb-8">
                     <h2 class="text-4xl font-black text-slate-800 tracking-tight">02. Minecraft</h2>
                 </div>
@@ -410,7 +414,7 @@
                     <img src="foto_minecraft.jpg" alt="Clase de Minecraft" class="w-full h-full object-cover">
                 </div>
 
-                <div class="bg-white rounded-3xl shadow-sm border border-emerald-100 p-8 md:p-10 mb-12 relative overflow-hidden">
+                <div class="bg-white rounded-3xl shadow-sm border border-emerald-100 p-8 md:p-10 mb-16 relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-full h-1.5 bg-emerald-500"></div>
                     <div class="flex flex-col lg:flex-row gap-10 items-start">
                         
@@ -422,7 +426,7 @@
                             
                             <details class="group bg-emerald-50/30 rounded-xl border border-emerald-200 overflow-hidden mb-8 transition-all">
                                 <summary class="flex justify-between items-center font-bold cursor-pointer bg-white hover:bg-emerald-50 px-6 py-4 text-emerald-800 transition-colors">
-                                    <span class="flex items-center gap-3"><i data-lucide="file-text" class="w-5 h-5 text-emerald-600"></i> Ver temario completo (12 Sesiones)</span>
+                                    <span class="flex items-center gap-3"><i data-lucide="file-text" class="w-5 h-5 text-emerald-600"></i> Ver documentación teórica (12 Sesiones)</span>
                                     <i data-lucide="chevron-down" class="w-5 h-5 text-emerald-600 group-open:rotate-180 transition-transform duration-300"></i>
                                 </summary>
                                 <div class="p-6 text-sm text-slate-700 space-y-6 border-t border-emerald-100 bg-white">
@@ -481,104 +485,160 @@
                 </div>
 
                 <h3 class="text-2xl font-black mb-6 text-slate-800 tracking-tight">Videos - Minecraft Live 2020</h3>
-                <div class="bg-white rounded-3xl shadow-sm border border-emerald-100 p-8 md:p-10 mb-12 relative overflow-hidden">
+                <div class="bg-white rounded-3xl shadow-sm border border-emerald-100 p-8 mb-16 relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-full h-1.5 bg-emerald-500"></div>
                     <p class="text-slate-600 mb-8 leading-relaxed">Las sesiones prácticas impartidas en directo para acompañar la guía de electrónica digital.</p>
                     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                        <a href="https://www.youtube.com/watch?v=2LdsyGMTA4w" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm">
+                        <a href="https://www.youtube.com/watch?v=2LdsyGMTA4w" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm hover:shadow-md hover:-translate-y-1">
                             <span class="text-sm font-bold text-slate-700 group-hover:text-red-700">Sesión 1</span>
                             <i data-lucide="play-circle" class="w-5 h-5 text-slate-400 group-hover:text-red-500"></i>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=tFL5rqwnInk" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm">
+                        <a href="https://www.youtube.com/watch?v=tFL5rqwnInk" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm hover:shadow-md hover:-translate-y-1">
                             <span class="text-sm font-bold text-slate-700 group-hover:text-red-700">Sesión 2</span>
                             <i data-lucide="play-circle" class="w-5 h-5 text-slate-400 group-hover:text-red-500"></i>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=S3a3BijuDsw" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm">
+                        <a href="https://www.youtube.com/watch?v=S3a3BijuDsw" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm hover:shadow-md hover:-translate-y-1">
                             <span class="text-sm font-bold text-slate-700 group-hover:text-red-700">Sesión 3</span>
                             <i data-lucide="play-circle" class="w-5 h-5 text-slate-400 group-hover:text-red-500"></i>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=g_ksNe442VA" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm">
+                        <a href="https://www.youtube.com/watch?v=g_ksNe442VA" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm hover:shadow-md hover:-translate-y-1">
                             <span class="text-sm font-bold text-slate-700 group-hover:text-red-700">Sesión 4</span>
                             <i data-lucide="play-circle" class="w-5 h-5 text-slate-400 group-hover:text-red-500"></i>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=lH8J8Ndnql8" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm">
+                        <a href="https://www.youtube.com/watch?v=lH8J8Ndnql8" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm hover:shadow-md hover:-translate-y-1">
                             <span class="text-sm font-bold text-slate-700 group-hover:text-red-700">Sesión 5</span>
                             <i data-lucide="play-circle" class="w-5 h-5 text-slate-400 group-hover:text-red-500"></i>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=61n7lOriE0c" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm">
+                        <a href="https://www.youtube.com/watch?v=61n7lOriE0c" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm hover:shadow-md hover:-translate-y-1">
                             <span class="text-sm font-bold text-slate-700 group-hover:text-red-700">Sesión 6</span>
                             <i data-lucide="play-circle" class="w-5 h-5 text-slate-400 group-hover:text-red-500"></i>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=CYjc75GfG7s" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm">
+                        <a href="https://www.youtube.com/watch?v=CYjc75GfG7s" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm hover:shadow-md hover:-translate-y-1">
                             <span class="text-sm font-bold text-slate-700 group-hover:text-red-700">Sesión 7</span>
                             <i data-lucide="play-circle" class="w-5 h-5 text-slate-400 group-hover:text-red-500"></i>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=KODdtKWFI5Q" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm">
+                        <a href="https://www.youtube.com/watch?v=KODdtKWFI5Q" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm hover:shadow-md hover:-translate-y-1">
                             <span class="text-sm font-bold text-slate-700 group-hover:text-red-700">Sesión 8</span>
                             <i data-lucide="play-circle" class="w-5 h-5 text-slate-400 group-hover:text-red-500"></i>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=KUvuJDYysZY" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm">
+                        <a href="https://www.youtube.com/watch?v=KUvuJDYysZY" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm hover:shadow-md hover:-translate-y-1">
                             <span class="text-sm font-bold text-slate-700 group-hover:text-red-700">Sesión 9</span>
                             <i data-lucide="play-circle" class="w-5 h-5 text-slate-400 group-hover:text-red-500"></i>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=xysa3gzmf7g" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm">
+                        <a href="https://www.youtube.com/watch?v=xysa3gzmf7g" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm hover:shadow-md hover:-translate-y-1">
                             <span class="text-sm font-bold text-slate-700 group-hover:text-red-700">Sesión 10</span>
                             <i data-lucide="play-circle" class="w-5 h-5 text-slate-400 group-hover:text-red-500"></i>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=_SX-l7UN9zY" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm">
+                        <a href="https://www.youtube.com/watch?v=_SX-l7UN9zY" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm hover:shadow-md hover:-translate-y-1">
                             <span class="text-sm font-bold text-slate-700 group-hover:text-red-700">Sesión 11</span>
                             <i data-lucide="play-circle" class="w-5 h-5 text-slate-400 group-hover:text-red-500"></i>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=ZC6jI4qbPZc" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm">
+                        <a href="https://www.youtube.com/watch?v=ZC6jI4qbPZc" target="_blank" class="flex items-center justify-between p-4 bg-slate-50 hover:bg-red-50 border border-slate-200 hover:border-red-200 rounded-xl transition-all group shadow-sm hover:shadow-md hover:-translate-y-1">
                             <span class="text-sm font-bold text-slate-700 group-hover:text-red-700">Sesión 12</span>
                             <i data-lucide="play-circle" class="w-5 h-5 text-slate-400 group-hover:text-red-500"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="bg-slate-800 rounded-3xl p-8 md:p-10 border border-slate-700 shadow-sm text-white">
+                <div class="bg-slate-800 rounded-3xl p-8 md:p-10 border border-slate-700 shadow-sm mt-8 text-white mb-16">
                     <h3 class="text-2xl font-black mb-6 tracking-tight flex items-center gap-3">
-                        <div class="p-2.5 bg-slate-700 text-emerald-400 rounded-xl"><i data-lucide="bot" class="w-6 h-6"></i></div>
-                        IA en Minecraft Education
+                        <div class="p-2.5 bg-slate-700 text-emerald-400 rounded-xl"><i data-lucide="play-square" class="w-6 h-6"></i></div>
+                        Otros Recursos Educativos (HILCODE) </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="p-5 bg-slate-700 rounded-xl border border-slate-600 flex flex-col justify-between h-full">
+                            <div>
+                                <h4 class="font-bold text-emerald-300 mb-1 text-lg">Videos en PlayHacks</h4>
+                                <p class="text-sm text-slate-300 mb-4">Requiere registro previo en la plataforma para visualizar el contenido. O accede a la carpeta Drive.</p>
+                            </div>
+                            <div class="mt-auto space-y-2">
+                                <a href="https://drive.google.com/file/d/19ZxpZpVB_a2mzhcL0TbCJUHljpkmGry7/view?usp=drive_link" target="_blank" class="flex justify-between items-center font-bold bg-slate-800 hover:bg-slate-900 border border-slate-600 rounded-xl px-4 py-2 text-white transition-colors group">
+                                    <span class="text-sm">Parte 1</span>
+                                    <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:text-emerald-400"></i>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1OdgRm46nKMPH5-dozXMZm2fzXGSYUdYY/view?usp=drive_link" target="_blank" class="flex justify-between items-center font-bold bg-slate-800 hover:bg-slate-900 border border-slate-600 rounded-xl px-4 py-2 text-white transition-colors group">
+                                    <span class="text-sm">Parte 2</span>
+                                    <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:text-emerald-400"></i>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1qJzds2IFcXV3nK4CyQ9-lw2pi2F0SoaC/view?usp=drive_link" target="_blank" class="flex justify-between items-center font-bold bg-slate-800 hover:bg-slate-900 border border-slate-600 rounded-xl px-4 py-2 text-white transition-colors group">
+                                    <span class="text-sm">Parte 3</span>
+                                    <i data-lucide="external-link" class="w-4 h-4 text-slate-400 group-hover:text-emerald-400"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-5 bg-slate-700 rounded-xl border border-slate-600 flex flex-col justify-between h-full">
+                            <div>
+                                <h4 class="font-bold text-emerald-300 mb-1 text-lg">Guía del Profesorado</h4>
+                                <p class="text-sm text-slate-300 mb-4">Material de apoyo enfocado al segundo trimestre del curso HILCODE.</p>
+                            </div>
+                            <a href="#" target="_blank" class="mt-auto flex justify-between items-center font-bold bg-slate-800 hover:bg-slate-900 border border-slate-600 rounded-xl px-4 py-3 text-white transition-colors group">
+                                <span class="flex items-center gap-2 text-sm"><i data-lucide="book-open" class="w-4 h-4"></i> Ver Guía Docente</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                        <div class="p-5 bg-slate-700 rounded-xl border border-slate-600 flex flex-col justify-between h-full">
+                            <div>
+                                <h4 class="font-bold text-emerald-300 mb-1 text-lg">Launcher Online</h4>
+                                <p class="text-sm text-slate-300 mb-4">Acceso directo a la plataforma desde tu navegador web habitual.</p>
+                            </div>
+                            <a href="#" target="_blank" class="mt-auto flex justify-between items-center font-bold bg-slate-800 hover:bg-slate-900 border border-slate-600 rounded-xl px-4 py-3 text-white transition-colors group">
+                                <span class="flex items-center gap-2 text-sm"><i data-lucide="globe" class="w-4 h-4"></i> Iniciar Launcher</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400 group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-emerald-600 rounded-3xl shadow-xl p-8 md:p-10 relative overflow-hidden text-white">
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-emerald-400"></div>
+                    <h3 class="text-2xl font-black mb-6 flex items-center gap-3 tracking-tight">
+                        <div class="p-2.5 bg-emerald-700 text-white rounded-xl"><i data-lucide="bot" class="w-6 h-6"></i></div>
+                        Inteligencia Artificial en Minecraft
                     </h3>
-                    <p class="text-slate-300 mb-8 leading-relaxed">Misiones guiadas donde los alumnos colaboran con asistentes de IA dentro del juego.</p>
+                    <p class="text-emerald-50 mb-10 leading-relaxed text-lg">Misiones y retos guiados donde los alumnos colaboran con asistentes de IA dentro del juego.</p>
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <div class="p-4 bg-slate-700 rounded-xl border border-slate-600">
-                            <h4 class="font-bold text-emerald-300 mb-1">1. Hora de la IA</h4>
-                            <p class="text-xs text-slate-400">La primera noche</p>
-                        </div>
-                        <div class="p-4 bg-slate-700 rounded-xl border border-slate-600">
-                            <h4 class="font-bold text-emerald-300 mb-1">2. Fantastic Fairgrounds</h4>
-                            <p class="text-xs text-slate-400">Parque temático</p>
-                        </div>
-                        <div class="p-4 bg-slate-700 rounded-xl border border-slate-600">
-                            <h4 class="font-bold text-emerald-300 mb-1">3. Generación IA</h4>
-                            <p class="text-xs text-slate-400">IA Responsable</p>
-                        </div>
-                        <div class="p-4 bg-slate-700 rounded-xl border border-slate-600">
-                            <h4 class="font-bold text-emerald-300 mb-1">4. IA para el bien</h4>
-                            <p class="text-xs text-slate-400">Incendios forestales</p>
-                        </div>
-                        <div class="p-4 bg-slate-700 rounded-xl border border-slate-600">
-                            <h4 class="font-bold text-emerald-300 mb-1">5. Reed Smart</h4>
-                            <p class="text-xs text-slate-400">Detective de IA</p>
-                        </div>
-                        <div class="p-4 bg-slate-700 rounded-xl border border-slate-600">
-                            <h4 class="font-bold text-emerald-300 mb-1">6. CyberSafe AI</h4>
-                            <p class="text-xs text-slate-400">Profundiza</p>
-                        </div>
+                        <a href="#" class="p-5 bg-emerald-700 hover:bg-emerald-800 rounded-xl border border-emerald-500 transition-all group hover:shadow-md hover:-translate-y-1">
+                            <h4 class="font-bold text-white mb-1 text-lg">1. Hora de la IA</h4>
+                            <p class="text-xs text-emerald-200 mb-4 uppercase tracking-wider font-bold">La primera noche</p>
+                            <span class="text-sm font-semibold text-white flex items-center gap-2">Enlace al mundo <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i></span>
+                        </a>
+                        <a href="#" class="p-5 bg-emerald-700 hover:bg-emerald-800 rounded-xl border border-emerald-500 transition-all group hover:shadow-md hover:-translate-y-1">
+                            <h4 class="font-bold text-white mb-1 text-lg">2. Fantastic Fairgrounds</h4>
+                            <p class="text-xs text-emerald-200 mb-4 uppercase tracking-wider font-bold">Parque temático</p>
+                            <span class="text-sm font-semibold text-white flex items-center gap-2">Enlace al mundo <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i></span>
+                        </a>
+                        <a href="#" class="p-5 bg-emerald-700 hover:bg-emerald-800 rounded-xl border border-emerald-500 transition-all group hover:shadow-md hover:-translate-y-1">
+                            <h4 class="font-bold text-white mb-1 text-lg">3. Generación IA</h4>
+                            <p class="text-xs text-emerald-200 mb-4 uppercase tracking-wider font-bold">IA Responsable</p>
+                            <span class="text-sm font-semibold text-white flex items-center gap-2">Enlace al mundo <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i></span>
+                        </a>
+                        <a href="#" class="p-5 bg-emerald-700 hover:bg-emerald-800 rounded-xl border border-emerald-500 transition-all group hover:shadow-md hover:-translate-y-1">
+                            <h4 class="font-bold text-white mb-1 text-lg">4. IA para el bien</h4>
+                            <p class="text-xs text-emerald-200 mb-4 uppercase tracking-wider font-bold">Medio Ambiente</p>
+                            <span class="text-sm font-semibold text-white flex items-center gap-2">Enlace al mundo <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i></span>
+                        </a>
+                        <a href="#" class="p-5 bg-emerald-700 hover:bg-emerald-800 rounded-xl border border-emerald-500 transition-all group hover:shadow-md hover:-translate-y-1">
+                            <h4 class="font-bold text-white mb-1 text-lg">5. Reed Smart</h4>
+                            <p class="text-xs text-emerald-200 mb-4 uppercase tracking-wider font-bold">Detective de IA</p>
+                            <span class="text-sm font-semibold text-white flex items-center gap-2">Enlace al mundo <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i></span>
+                        </a>
+                        <a href="#" class="p-5 bg-emerald-700 hover:bg-emerald-800 rounded-xl border border-emerald-500 transition-all group hover:shadow-md hover:-translate-y-1">
+                            <h4 class="font-bold text-white mb-1 text-lg">6. CyberSafe AI</h4>
+                            <p class="text-xs text-emerald-200 mb-4 uppercase tracking-wider font-bold">Profundiza</p>
+                            <span class="text-sm font-semibold text-white flex items-center gap-2">Enlace al mundo <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i></span>
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <section id="tinkercad" class="scroll-mt-24 bg-blue-50/40 rounded-[2.5rem] p-6 md:p-10 border border-blue-100 shadow-sm">
+            <section id="tinkercad" class="scroll-mt-24 bg-blue-50/40 rounded-[2.5rem] p-6 md:p-10 border border-blue-100">
                 <div class="flex items-end gap-4 mb-8">
                     <h2 class="text-4xl font-black text-slate-800 tracking-tight">03. Tinkercad</h2>
+                    <div class="section-separator flex-1 mb-3"></div>
                 </div>
                 
                 <div class="w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-md mb-10 bg-white border-4 border-white">
-                    <img src="foto_tinkercad_arduino.jpg" alt="Diseño 3D y Arduino en Tinkercad" class="w-full h-full object-cover">
+                    <img src="foto_tinkercad.jpg" alt="Diseño 3D y Arduino en Tinkercad" class="w-full h-full object-cover">
                 </div>
 
                 <div class="flex flex-col md:flex-row gap-8 items-center bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-sm relative overflow-hidden">
@@ -587,9 +647,14 @@
                         <h3 class="text-2xl font-black text-slate-800 tracking-tight">Diseño 3D simplificado y Simulación</h3>
                         <p class="text-slate-600 text-lg leading-relaxed">Plataforma online gratuita que permite a jóvenes iniciarse en el diseño 3D de forma sencilla y visual. Basada en figuras geométricas, pueden crear desde objetos simples hasta modelos para impresión 3D, así como simular de forma interactiva circuitos con Arduino y programación de hardware.</p>
                         
-                        <div class="pt-4 flex flex-wrap gap-4">
+                        <div class="bg-blue-50/50 p-4 rounded-xl border border-blue-100 my-4">
+                            <h4 class="font-bold text-blue-900 mb-1 flex items-center gap-2"><i data-lucide="smartphone" class="w-4 h-4"></i> Proyecto del curso:</h4>
+                            <p class="text-sm text-blue-800">Diseño completo de un <strong>Soporte para móviles</strong> paso a paso utilizando las herramientas de diseño 3D de Tinkercad.</p>
+                        </div>
+
+                        <div class="pt-2 flex flex-wrap gap-4">
                             <a href="https://www.tinkercad.com/learn/designs?collectionId=OSZ5W2BL1W5N51F" target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-md">
-                                <i data-lucide="cuboid" class="w-5 h-5"></i> Explorar Plataforma Tinkercad
+                                <i data-lucide="cuboid" class="w-5 h-5"></i> Explorar Colección de Diseños
                             </a>
                         </div>
                         <p class="text-xs text-slate-400 mt-2 font-medium uppercase tracking-wider">* Solo necesitan crear una cuenta de estudiante gratuita.</p>
@@ -597,9 +662,10 @@
                 </div>
             </section>
 
-            <section id="makecode" class="scroll-mt-24 bg-purple-50/40 rounded-[2.5rem] p-6 md:p-10 border border-purple-100 shadow-sm">
+            <section id="makecode" class="scroll-mt-24 bg-purple-50/40 rounded-[2.5rem] p-6 md:p-10 border border-purple-100">
                 <div class="flex items-end gap-4 mb-8">
                     <h2 class="text-4xl font-black text-slate-800 tracking-tight">04. MakeCode Arcade</h2>
+                    <div class="section-separator flex-1 mb-3"></div>
                 </div>
 
                 <div class="bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-sm relative overflow-hidden flex flex-col md:flex-row gap-10 items-center">
@@ -609,7 +675,7 @@
                         <p class="text-slate-600 text-lg mb-8 leading-relaxed">Plataforma online de Microsoft para programar videojuegos tipo arcade de 8 bits. Diseña personajes, niveles, lógica de juego ¡y juega a tus propias creaciones con bloques, JavaScript o Python!</p>
                         <div class="flex flex-wrap gap-4">
                             <a href="https://arcade.makecode.com/" target="_blank" class="flex items-center gap-2 px-6 py-3.5 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl transition-all shadow-md">
-                                <i data-lucide="gamepad-2" class="w-5 h-5"></i> Acceder al Editor
+                                <i data-lucide="gamepad-2" class="w-5 h-5"></i> Acceder al Editor Principal
                             </a>
                             <a href="https://arcade.makecode.com/#tutorials" target="_blank" class="flex items-center gap-2 px-6 py-3.5 bg-slate-50 border border-slate-200 text-slate-700 hover:bg-purple-50 hover:text-purple-700 hover:border-purple-200 font-bold rounded-xl transition-all">
                                 <i data-lucide="library" class="w-5 h-5"></i> Explorar Tutoriales
@@ -622,9 +688,10 @@
                 </div>
             </section>
 
-            <section id="roblox" class="scroll-mt-24 bg-slate-100/50 rounded-[2.5rem] p-6 md:p-10 border border-slate-200 shadow-sm">
+            <section id="roblox" class="scroll-mt-24 bg-slate-100/50 rounded-[2.5rem] p-6 md:p-10 border border-slate-200">
                 <div class="flex items-end gap-4 mb-8">
                     <h2 class="text-4xl font-black text-slate-800 tracking-tight">05. Roblox Studio</h2>
+                    <div class="section-separator flex-1 mb-3"></div>
                 </div>
 
                 <div class="w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-md mb-10 bg-white border-4 border-white">
@@ -647,69 +714,136 @@
                     Videotutoriales del Curso (Roblox)
                 </h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <a href="https://youtu.be/4rBLjJg0S5U?is=IYEIHinIgbcGNtHz" target="_blank" class="bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-slate-400 p-6 flex flex-col justify-between h-full group transition-all">
+                    <a href="https://youtu.be/4rBLjJg0S5U?is=IYEIHinIgbcGNtHz" target="_blank" class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl shadow-md border border-slate-600 hover:border-slate-400 p-6 flex flex-col justify-between h-full group hover:-translate-y-1 transition-all">
                         <div>
-                            <h4 class="font-extrabold text-lg mb-1 text-slate-800">Roblox 1</h4>
-                            <p class="text-xs text-slate-500 font-bold mb-4 uppercase tracking-wider">Video de la sesión</p>
+                            <h4 class="font-extrabold text-lg mb-1 text-white">Roblox 1</h4>
+                            <p class="text-xs text-slate-400 font-bold mb-4 uppercase tracking-wider">Video de la sesión</p>
                         </div>
-                        <span class="flex items-center gap-2 font-bold text-slate-600 group-hover:text-red-600 transition-colors mt-4">
-                            <i data-lucide="play-circle" class="w-5 h-5"></i> Reproducir clase
+                        <span class="flex items-center gap-2 font-bold text-slate-300 group-hover:text-white transition-colors mt-4">
+                            <i data-lucide="play-circle" class="w-5 h-5 text-red-500"></i> Reproducir clase
                         </span>
                     </a>
-                    <a href="https://youtu.be/jogj0w4OADI?is=iUfOpIrbIee7b8Ff" target="_blank" class="bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-slate-400 p-6 flex flex-col justify-between h-full group transition-all">
+                    <a href="https://youtu.be/jogj0w4OADI?is=iUfOpIrbIee7b8Ff" target="_blank" class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl shadow-md border border-slate-600 hover:border-slate-400 p-6 flex flex-col justify-between h-full group hover:-translate-y-1 transition-all">
                         <div>
-                            <h4 class="font-extrabold text-lg mb-1 text-slate-800">Roblox 2</h4>
-                            <p class="text-xs text-slate-500 font-bold mb-4 uppercase tracking-wider">Video de la sesión</p>
+                            <h4 class="font-extrabold text-lg mb-1 text-white">Roblox 2</h4>
+                            <p class="text-xs text-slate-400 font-bold mb-4 uppercase tracking-wider">Video de la sesión</p>
                         </div>
-                        <span class="flex items-center gap-2 font-bold text-slate-600 group-hover:text-red-600 transition-colors mt-4">
-                            <i data-lucide="play-circle" class="w-5 h-5"></i> Reproducir clase
+                        <span class="flex items-center gap-2 font-bold text-slate-300 group-hover:text-white transition-colors mt-4">
+                            <i data-lucide="play-circle" class="w-5 h-5 text-red-500"></i> Reproducir clase
                         </span>
                     </a>
-                    <a href="https://youtu.be/dJ7tR7-AEjo?is=pZONrQ8uB0PKHEOU" target="_blank" class="bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-slate-400 p-6 flex flex-col justify-between h-full group transition-all">
+                    <a href="https://youtu.be/dJ7tR7-AEjo?is=pZONrQ8uB0PKHEOU" target="_blank" class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl shadow-md border border-slate-600 hover:border-slate-400 p-6 flex flex-col justify-between h-full group hover:-translate-y-1 transition-all">
                         <div>
-                            <h4 class="font-extrabold text-lg mb-1 text-slate-800">Roblox 3</h4>
-                            <p class="text-xs text-slate-500 font-bold mb-4 uppercase tracking-wider">Video de la sesión</p>
+                            <h4 class="font-extrabold text-lg mb-1 text-white">Roblox 3</h4>
+                            <p class="text-xs text-slate-400 font-bold mb-4 uppercase tracking-wider">Video de la sesión</p>
                         </div>
-                        <span class="flex items-center gap-2 font-bold text-slate-600 group-hover:text-red-600 transition-colors mt-4">
-                            <i data-lucide="play-circle" class="w-5 h-5"></i> Reproducir clase
+                        <span class="flex items-center gap-2 font-bold text-slate-300 group-hover:text-white transition-colors mt-4">
+                            <i data-lucide="play-circle" class="w-5 h-5 text-red-500"></i> Reproducir clase
                         </span>
                     </a>
-                    <a href="https://youtu.be/moaOn8l7qDM?is=LyYmRt1_9B8PUBg6" target="_blank" class="bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-slate-400 p-6 flex flex-col justify-between h-full group transition-all">
+                    <a href="https://youtu.be/moaOn8l7qDM?is=LyYmRt1_9B8PUBg6" target="_blank" class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl shadow-md border border-slate-600 hover:border-slate-400 p-6 flex flex-col justify-between h-full group hover:-translate-y-1 transition-all">
                         <div>
-                            <h4 class="font-extrabold text-lg mb-1 text-slate-800">Roblox 4</h4>
-                            <p class="text-xs text-slate-500 font-bold mb-4 uppercase tracking-wider">Video de la sesión</p>
+                            <h4 class="font-extrabold text-lg mb-1 text-white">Roblox 4</h4>
+                            <p class="text-xs text-slate-400 font-bold mb-4 uppercase tracking-wider">Video de la sesión</p>
                         </div>
-                        <span class="flex items-center gap-2 font-bold text-slate-600 group-hover:text-red-600 transition-colors mt-4">
-                            <i data-lucide="play-circle" class="w-5 h-5"></i> Reproducir clase
+                        <span class="flex items-center gap-2 font-bold text-slate-300 group-hover:text-white transition-colors mt-4">
+                            <i data-lucide="play-circle" class="w-5 h-5 text-red-500"></i> Reproducir clase
                         </span>
                     </a>
-                    <a href="https://youtu.be/_TanOChT6sU?is=dGTNo7GTVq0xpC2K" target="_blank" class="bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-slate-400 p-6 flex flex-col justify-between h-full group transition-all">
+                    <a href="https://youtu.be/_TanOChT6sU?is=dGTNo7GTVq0xpC2K" target="_blank" class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl shadow-md border border-slate-600 hover:border-slate-400 p-6 flex flex-col justify-between h-full group hover:-translate-y-1 transition-all">
                         <div>
-                            <h4 class="font-extrabold text-lg mb-1 text-slate-800">Roblox 5</h4>
-                            <p class="text-xs text-slate-500 font-bold mb-4 uppercase tracking-wider">Video de la sesión</p>
+                            <h4 class="font-extrabold text-lg mb-1 text-white">Roblox 5</h4>
+                            <p class="text-xs text-slate-400 font-bold mb-4 uppercase tracking-wider">Video de la sesión</p>
                         </div>
-                        <span class="flex items-center gap-2 font-bold text-slate-600 group-hover:text-red-600 transition-colors mt-4">
-                            <i data-lucide="play-circle" class="w-5 h-5"></i> Reproducir clase
+                        <span class="flex items-center gap-2 font-bold text-slate-300 group-hover:text-white transition-colors mt-4">
+                            <i data-lucide="play-circle" class="w-5 h-5 text-red-500"></i> Reproducir clase
                         </span>
                     </a>
-                    <a href="https://youtu.be/zPIAaBMRF3Q?is=O1Gzj6zVydwJppA0" target="_blank" class="bg-white rounded-2xl shadow-sm border border-slate-200 hover:border-slate-400 p-6 flex flex-col justify-between h-full group transition-all">
+                    <a href="https://youtu.be/zPIAaBMRF3Q?is=O1Gzj6zVydwJppA0" target="_blank" class="bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl shadow-md border border-slate-600 hover:border-slate-400 p-6 flex flex-col justify-between h-full group hover:-translate-y-1 transition-all">
                         <div>
-                            <h4 class="font-extrabold text-lg mb-1 text-slate-800">Roblox 6</h4>
-                            <p class="text-xs text-slate-500 font-bold mb-4 uppercase tracking-wider">Video de la sesión</p>
+                            <h4 class="font-extrabold text-lg mb-1 text-white">Roblox 6</h4>
+                            <p class="text-xs text-slate-400 font-bold mb-4 uppercase tracking-wider">Video de la sesión</p>
                         </div>
-                        <span class="flex items-center gap-2 font-bold text-slate-600 group-hover:text-red-600 transition-colors mt-4">
-                            <i data-lucide="play-circle" class="w-5 h-5"></i> Reproducir clase
+                        <span class="flex items-center gap-2 font-bold text-slate-300 group-hover:text-white transition-colors mt-4">
+                            <i data-lucide="play-circle" class="w-5 h-5 text-red-500"></i> Reproducir clase
                         </span>
                     </a>
                 </div>
             </section>
 
-            <section id="placas" class="scroll-mt-24 bg-cyan-50/40 rounded-[2.5rem] p-6 md:p-10 border border-cyan-100 shadow-sm">
+            <section id="robotica" class="scroll-mt-24 bg-rose-50/40 rounded-[2.5rem] p-6 md:p-10 border border-rose-100">
                 <div class="flex items-end gap-4 mb-8">
-                    <h2 class="text-4xl font-black text-slate-800 tracking-tight">06. Placas y Circuitos</h2>
+                    <h2 class="text-4xl font-black text-slate-800 tracking-tight">06. Robótica Educativa</h2>
+                    <div class="section-separator flex-1 mb-3"></div>
+                </div>
+                
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed">Construcción y programación de robots físicos interactuando con el mundo real, adaptados según la etapa educativa.</p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-rose-500"></div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="p-2 bg-rose-50 text-rose-600 rounded-lg"><i data-lucide="blocks" class="w-5 h-5"></i></div>
+                            <h3 class="text-2xl font-black text-slate-800 tracking-tight">Lego WEDO 2.0</h3>
+                            <span class="ml-auto text-xs font-bold bg-slate-100 px-3 py-1 rounded-full text-slate-600 uppercase">Primaria</span>
+                        </div>
+                        <div class="space-y-6 flex-1">
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-2 border-b border-slate-100 pb-1">Contenidos</h4>
+                                <ul class="space-y-1.5 text-sm text-slate-600">
+                                    <li>• <strong class="text-slate-700">Mecanismos:</strong> Engranajes, poleas, ejes.</li>
+                                    <li>• <strong class="text-slate-700">Electrónica:</strong> Sensores, LEDs, motores, HUB.</li>
+                                    <li>• Programación en interfaz WEDO 2.0</li>
+                                    <li>• Conexión del robot a Scratch</li>
+                                </ul>
+                            </div>
+                            <div class="bg-rose-50/50 p-4 rounded-xl border border-rose-100">
+                                <h4 class="font-bold text-rose-800 mb-2 text-sm uppercase tracking-wider">Proyectos iniciales</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-white border border-rose-200 rounded-md text-xs font-semibold text-rose-700">Gallina / Pterodáctilo</span>
+                                    <span class="px-3 py-1 bg-white border border-rose-200 rounded-md text-xs font-semibold text-rose-700">Coche motorizado</span>
+                                    <span class="px-3 py-1 bg-white border border-rose-200 rounded-md text-xs font-semibold text-rose-700">Helicóptero</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 relative overflow-hidden flex flex-col">
+                        <div class="absolute top-0 left-0 w-full h-2 bg-blue-600"></div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="p-2 bg-blue-50 text-blue-600 rounded-lg"><i data-lucide="bot" class="w-5 h-5"></i></div>
+                            <h3 class="text-2xl font-black text-slate-800 tracking-tight">Robots mBot</h3>
+                            <span class="ml-auto text-xs font-bold bg-slate-100 px-3 py-1 rounded-full text-slate-600 uppercase">Secundaria</span>
+                        </div>
+                        <div class="space-y-6 flex-1">
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-2 border-b border-slate-100 pb-1">Electrónica (Basada en Arduino)</h4>
+                                <ul class="space-y-1.5 text-sm text-slate-600">
+                                    <li>• <strong class="text-slate-700">Entradas:</strong> IR, ultrasonidos, módulos.</li>
+                                    <li>• <strong class="text-slate-700">Salidas:</strong> LED RGB, Buzzer (Zumbador).</li>
+                                    <li>• Señales digitales y analógicas</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-2 border-b border-slate-100 pb-1">Programación (mBlock)</h4>
+                                <ul class="space-y-1.5 text-sm text-slate-600">
+                                    <li>• Interfaz mBlock y conexión de placa.</li>
+                                    <li>• Lectura y comprobación de entradas.</li>
+                                    <li>• Lógica de motores: Robot en movimiento.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="placas" class="scroll-mt-24 bg-cyan-50/40 rounded-[2.5rem] p-6 md:p-10 border border-cyan-100">
+                <div class="flex items-end gap-4 mb-8">
+                    <h2 class="text-4xl font-black text-slate-800 tracking-tight">07. Placas y Circuitos</h2>
+                    <div class="section-separator flex-1 mb-3"></div>
                 </div>
 
-                <div class="w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-md mb-12 bg-white border-4 border-white">
+                <div class="w-full aspect-video md:aspect-[21/9] rounded-3xl overflow-hidden shadow-lg mb-12 bg-white border-4 border-white">
                     <img src="foto_makey.jpg" alt="Makey Makey Plátanos y PC" class="w-full h-full object-cover">
                 </div>
 
@@ -751,7 +885,7 @@
                             
                             <details class="group/acc mt-4">
                                 <summary class="list-none flex justify-between items-center font-bold cursor-pointer bg-slate-800 hover:bg-slate-700 rounded-xl px-4 py-3 text-white transition-colors text-sm shadow-sm">
-                                    <span class="flex items-center gap-2"><i data-lucide="folder-open" class="w-4 h-4 text-accent-400"></i> Explorar todos los retos y links</span>
+                                    <span class="flex items-center gap-2"><i data-lucide="folder-open" class="w-4 h-4 text-accent-400"></i> Explorar todos los retos y links [1]</span>
                                     <i data-lucide="chevron-down" class="w-4 h-4 text-slate-300 group-open/acc:rotate-180 transition-transform duration-300"></i>
                                 </summary>
                                 <div class="mt-3 space-y-2 p-4 bg-slate-50 border border-slate-200 rounded-xl shadow-inner text-sm">
@@ -795,7 +929,7 @@
                         <h3 class="text-2xl font-black text-slate-800 mb-3 tracking-tight">Iniciación al pensamiento lógico <span class="text-yellow-600">(4-6 años)</span></h3>
                         <p class="text-slate-600 mb-6 text-lg leading-relaxed">Robot educativo con forma de abeja. Ideal para trabajar secuenciación, resolución de problemas, orientación espacial y ensayo/error de forma manipulativa y sin pantallas.</p>
                         <div class="flex flex-wrap gap-4">
-                            <a href="https://youtu.be/t1NxCavZqql" target="_blank" class="flex items-center gap-2 px-5 py-3 bg-slate-50 border border-slate-200 hover:border-yellow-300 rounded-xl font-bold text-slate-700 hover:bg-yellow-50 transition-all shadow-sm">
+                            <a href="https://youtu.be/D4g9geKRSk8?feature=shared" target="_blank" class="flex items-center gap-2 px-5 py-3 bg-slate-50 border border-slate-200 hover:border-yellow-300 rounded-xl font-bold text-slate-700 hover:bg-yellow-50 transition-all shadow-sm">
                                 <i data-lucide="video" class="text-red-500 w-5 h-5"></i> Video del Taller
                             </a>
                             <a href="https://prezi.com/view/8GcfmzrBS8jysDHZeA6R/" target="_blank" class="flex items-center gap-2 px-5 py-3 bg-slate-50 border border-slate-200 hover:border-yellow-300 rounded-xl font-bold text-slate-700 hover:bg-yellow-50 transition-all shadow-sm">
